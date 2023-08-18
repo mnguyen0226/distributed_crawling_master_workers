@@ -33,3 +33,40 @@ run_master = DockerOperator(
     },
     dag=dag
 )
+
+# with DAG(
+#     dag_id='master_master_dag',
+#     default_args=default_args,
+#     description='Master DAG pushing URLs to Redis',
+#     schedule_interval=timedelta(days=1),
+#     start_date=datetime(2023, 8, 17),
+#     catchup=False,
+# ) as DAG:
+#     run_master = DockerOperator(
+#         task_id='run_master_container',
+#         image='custom_master_image:latest',
+#         api_version='auto',
+#         auto_remove=True,
+#         command='python master.py',
+#         docker_url='unix://var/run/docker.sock',
+#         network_mode='bridge',
+#         environment={
+#             'REDIS_URL': 'redis://default:T4p3kJQRmQDNRqxt1tG97qQWGKRFG6fQ@redis-12469.c81.us-east-1-2.ec2.cloud.redislabs.com:12469'
+#         },
+#     )
+
+#     run_worker = DockerOperator(
+#         task_id='run_worker_container',
+#         image='custom_worker_image:latest',
+#         api_version='auto',
+#         auto_remove=True,
+#         command='scrapy crawl mini_spider',
+#         docker_url='unix://var/run/docker.sock',
+#         network_mode='bridge',
+#         volumes=['./output:/app/output'],
+#         environment={
+#             'REDIS_URL': 'redis://default:T4p3kJQRmQDNRqxt1tG97qQWGKRFG6fQ@redis-12469.c81.us-east-1-2.ec2.cloud.redislabs.com:12469'
+#         },
+#     )
+    
+#     run_master >> run_worker

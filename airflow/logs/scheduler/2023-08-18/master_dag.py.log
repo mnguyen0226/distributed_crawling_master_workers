@@ -110,3 +110,720 @@
 [2023-08-18 21:17:31,051] {logging_mixin.py:104} INFO - [2023-08-18 21:17:31,050] {dag.py:1833} INFO - Sync 1 DAGs
 [2023-08-18 21:17:31,068] {logging_mixin.py:104} INFO - [2023-08-18 21:17:31,068] {dag.py:2306} INFO - Setting next_dagrun for master_dag to 2023-08-19T00:00:00+00:00
 [2023-08-18 21:17:31,105] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.158 seconds
+[2023-08-18 21:30:48,737] {scheduler_job.py:181} INFO - Started process (PID=18) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:30:48,739] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:30:48,740] {logging_mixin.py:104} INFO - [2023-08-18 21:30:48,739] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:30:48,800] {logging_mixin.py:104} INFO - [2023-08-18 21:30:48,798] {dagbag.py:329} ERROR - Failed to import: /usr/local/airflow/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/master_dag.py", line 46, in <module>
+    run_worker = DockerOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 506, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: run_worker_container). Invalid arguments were:
+**kwargs: {'volumes': ['./output:/app/output']}
+[2023-08-18 21:30:48,801] {scheduler_job.py:644} WARNING - No viable dags retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:30:48,829] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.097 seconds
+[2023-08-18 21:31:19,013] {scheduler_job.py:181} INFO - Started process (PID=20) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:31:19,020] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:31:19,023] {logging_mixin.py:104} INFO - [2023-08-18 21:31:19,022] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:31:19,140] {logging_mixin.py:104} INFO - [2023-08-18 21:31:19,131] {dagbag.py:329} ERROR - Failed to import: /usr/local/airflow/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/master_dag.py", line 46, in <module>
+    run_worker = DockerOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 506, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: run_worker_container). Invalid arguments were:
+**kwargs: {'volumes': ['./output:/app/output']}
+[2023-08-18 21:31:19,141] {scheduler_job.py:644} WARNING - No viable dags retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:31:19,167] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.164 seconds
+[2023-08-18 21:31:49,663] {scheduler_job.py:181} INFO - Started process (PID=22) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:31:49,667] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:31:49,669] {logging_mixin.py:104} INFO - [2023-08-18 21:31:49,668] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:31:49,737] {logging_mixin.py:104} INFO - [2023-08-18 21:31:49,735] {dagbag.py:329} ERROR - Failed to import: /usr/local/airflow/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/master_dag.py", line 46, in <module>
+    run_worker = DockerOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 506, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: run_worker_container). Invalid arguments were:
+**kwargs: {'volumes': ['./output:/app/output']}
+[2023-08-18 21:31:49,738] {scheduler_job.py:644} WARNING - No viable dags retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:31:49,768] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.113 seconds
+[2023-08-18 21:32:19,943] {scheduler_job.py:181} INFO - Started process (PID=24) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:32:19,945] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:32:19,946] {logging_mixin.py:104} INFO - [2023-08-18 21:32:19,946] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:32:20,057] {logging_mixin.py:104} INFO - [2023-08-18 21:32:20,055] {dagbag.py:329} ERROR - Failed to import: /usr/local/airflow/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/master_dag.py", line 46, in <module>
+    run_worker = DockerOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 506, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: run_worker_container). Invalid arguments were:
+**kwargs: {'volumes': ['./output:/app/output']}
+[2023-08-18 21:32:20,058] {scheduler_job.py:644} WARNING - No viable dags retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:32:20,078] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.139 seconds
+[2023-08-18 21:32:35,539] {scheduler_job.py:181} INFO - Started process (PID=26) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:32:35,541] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:32:35,542] {logging_mixin.py:104} INFO - [2023-08-18 21:32:35,542] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:32:35,623] {logging_mixin.py:104} INFO - [2023-08-18 21:32:35,621] {dagbag.py:329} ERROR - Failed to import: /usr/local/airflow/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/master_dag.py", line 70, in <module>
+    run_worker = DockerOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 506, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: run_worker_container). Invalid arguments were:
+**kwargs: {'volumes': ['./output:/app/output']}
+[2023-08-18 21:32:35,626] {scheduler_job.py:644} WARNING - No viable dags retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:32:35,656] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.121 seconds
+[2023-08-18 21:33:06,213] {scheduler_job.py:181} INFO - Started process (PID=28) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:33:06,215] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:33:06,216] {logging_mixin.py:104} INFO - [2023-08-18 21:33:06,216] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:33:06,285] {logging_mixin.py:104} INFO - [2023-08-18 21:33:06,284] {dagbag.py:329} ERROR - Failed to import: /usr/local/airflow/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/master_dag.py", line 70, in <module>
+    run_worker = DockerOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 506, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: run_worker_container). Invalid arguments were:
+**kwargs: {'volumes': ['./output:/app/output']}
+[2023-08-18 21:33:06,286] {scheduler_job.py:644} WARNING - No viable dags retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:33:06,315] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.106 seconds
+[2023-08-18 21:33:36,793] {scheduler_job.py:181} INFO - Started process (PID=30) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:33:36,796] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:33:36,798] {logging_mixin.py:104} INFO - [2023-08-18 21:33:36,798] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:33:36,878] {logging_mixin.py:104} INFO - [2023-08-18 21:33:36,876] {dagbag.py:329} ERROR - Failed to import: /usr/local/airflow/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/master_dag.py", line 70, in <module>
+    run_worker = DockerOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 506, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: run_worker_container). Invalid arguments were:
+**kwargs: {'volumes': ['./output:/app/output']}
+[2023-08-18 21:33:36,879] {scheduler_job.py:644} WARNING - No viable dags retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:33:36,909] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.124 seconds
+[2023-08-18 21:34:49,357] {scheduler_job.py:181} INFO - Started process (PID=18) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:34:49,359] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:34:49,360] {logging_mixin.py:104} INFO - [2023-08-18 21:34:49,360] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:34:49,426] {logging_mixin.py:104} INFO - [2023-08-18 21:34:49,424] {dagbag.py:329} ERROR - Failed to import: /usr/local/airflow/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/master_dag.py", line 59, in <module>
+    run_worker = DockerOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 506, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: run_worker_container). Invalid arguments were:
+**kwargs: {'volumes': ['./output:/app/output']}
+[2023-08-18 21:34:49,427] {scheduler_job.py:644} WARNING - No viable dags retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:34:49,497] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.144 seconds
+[2023-08-18 21:35:19,653] {scheduler_job.py:181} INFO - Started process (PID=20) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:35:19,654] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:35:19,655] {logging_mixin.py:104} INFO - [2023-08-18 21:35:19,655] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:35:19,724] {logging_mixin.py:104} INFO - [2023-08-18 21:35:19,722] {dagbag.py:329} ERROR - Failed to import: /usr/local/airflow/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/master_dag.py", line 59, in <module>
+    run_worker = DockerOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 506, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: run_worker_container). Invalid arguments were:
+**kwargs: {'volumes': ['./output:/app/output']}
+[2023-08-18 21:35:19,725] {scheduler_job.py:644} WARNING - No viable dags retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:35:19,754] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.104 seconds
+[2023-08-18 21:35:50,333] {scheduler_job.py:181} INFO - Started process (PID=22) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:35:50,339] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:35:50,340] {logging_mixin.py:104} INFO - [2023-08-18 21:35:50,340] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:35:50,402] {logging_mixin.py:104} INFO - [2023-08-18 21:35:50,401] {dagbag.py:329} ERROR - Failed to import: /usr/local/airflow/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/master_dag.py", line 59, in <module>
+    run_worker = DockerOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 506, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: run_worker_container). Invalid arguments were:
+**kwargs: {'volumes': ['./output:/app/output']}
+[2023-08-18 21:35:50,403] {scheduler_job.py:644} WARNING - No viable dags retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:35:50,423] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.098 seconds
+[2023-08-18 21:36:20,568] {scheduler_job.py:181} INFO - Started process (PID=24) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:36:20,570] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:36:20,571] {logging_mixin.py:104} INFO - [2023-08-18 21:36:20,571] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:36:20,655] {logging_mixin.py:104} INFO - [2023-08-18 21:36:20,653] {dagbag.py:329} ERROR - Failed to import: /usr/local/airflow/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/master_dag.py", line 59, in <module>
+    run_worker = DockerOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 506, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: run_worker_container). Invalid arguments were:
+**kwargs: {'volumes': ['./output:/app/output']}
+[2023-08-18 21:36:20,659] {scheduler_job.py:644} WARNING - No viable dags retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:36:20,686] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.121 seconds
+[2023-08-18 21:36:51,582] {scheduler_job.py:181} INFO - Started process (PID=26) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:36:51,584] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:36:51,586] {logging_mixin.py:104} INFO - [2023-08-18 21:36:51,586] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:36:51,648] {logging_mixin.py:104} INFO - [2023-08-18 21:36:51,646] {dagbag.py:329} ERROR - Failed to import: /usr/local/airflow/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/master_dag.py", line 59, in <module>
+    run_worker = DockerOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 506, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: run_worker_container). Invalid arguments were:
+**kwargs: {'volumes': ['./output:/app/output']}
+[2023-08-18 21:36:51,649] {scheduler_job.py:644} WARNING - No viable dags retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:36:51,676] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.100 seconds
+[2023-08-18 21:37:21,812] {scheduler_job.py:181} INFO - Started process (PID=28) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:37:21,815] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:37:21,816] {logging_mixin.py:104} INFO - [2023-08-18 21:37:21,816] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:37:21,931] {logging_mixin.py:104} INFO - [2023-08-18 21:37:21,929] {dagbag.py:329} ERROR - Failed to import: /usr/local/airflow/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/master_dag.py", line 59, in <module>
+    run_worker = DockerOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 506, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: run_worker_container). Invalid arguments were:
+**kwargs: {'volumes': ['./output:/app/output']}
+[2023-08-18 21:37:21,932] {scheduler_job.py:644} WARNING - No viable dags retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:37:21,961] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.156 seconds
+[2023-08-18 21:37:52,700] {scheduler_job.py:181} INFO - Started process (PID=30) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:37:52,703] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:37:52,704] {logging_mixin.py:104} INFO - [2023-08-18 21:37:52,704] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:37:52,777] {logging_mixin.py:104} INFO - [2023-08-18 21:37:52,775] {dagbag.py:329} ERROR - Failed to import: /usr/local/airflow/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/master_dag.py", line 59, in <module>
+    run_worker = DockerOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 506, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: run_worker_container). Invalid arguments were:
+**kwargs: {'volumes': ['./output:/app/output']}
+[2023-08-18 21:37:52,778] {scheduler_job.py:644} WARNING - No viable dags retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:37:52,798] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.105 seconds
+[2023-08-18 21:38:23,090] {scheduler_job.py:181} INFO - Started process (PID=32) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:38:23,094] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:38:23,098] {logging_mixin.py:104} INFO - [2023-08-18 21:38:23,098] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:38:23,194] {logging_mixin.py:104} INFO - [2023-08-18 21:38:23,192] {dagbag.py:329} ERROR - Failed to import: /usr/local/airflow/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/master_dag.py", line 59, in <module>
+    run_worker = DockerOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 506, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: run_worker_container). Invalid arguments were:
+**kwargs: {'volumes': ['./output:/app/output']}
+[2023-08-18 21:38:23,195] {scheduler_job.py:644} WARNING - No viable dags retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:38:23,232] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.148 seconds
+[2023-08-18 21:38:53,824] {scheduler_job.py:181} INFO - Started process (PID=34) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:38:53,825] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:38:53,826] {logging_mixin.py:104} INFO - [2023-08-18 21:38:53,826] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:38:53,916] {logging_mixin.py:104} INFO - [2023-08-18 21:38:53,895] {dagbag.py:329} ERROR - Failed to import: /usr/local/airflow/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/master_dag.py", line 59, in <module>
+    run_worker = DockerOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 506, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: run_worker_container). Invalid arguments were:
+**kwargs: {'volumes': ['./output:/app/output']}
+[2023-08-18 21:38:53,928] {scheduler_job.py:644} WARNING - No viable dags retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:38:53,960] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.140 seconds
+[2023-08-18 21:39:24,242] {scheduler_job.py:181} INFO - Started process (PID=36) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:39:24,244] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:39:24,245] {logging_mixin.py:104} INFO - [2023-08-18 21:39:24,245] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:39:24,319] {logging_mixin.py:104} INFO - [2023-08-18 21:39:24,317] {dagbag.py:329} ERROR - Failed to import: /usr/local/airflow/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/master_dag.py", line 59, in <module>
+    run_worker = DockerOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 506, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: run_worker_container). Invalid arguments were:
+**kwargs: {'volumes': ['./output:/app/output']}
+[2023-08-18 21:39:24,321] {scheduler_job.py:644} WARNING - No viable dags retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:39:24,350] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.111 seconds
+[2023-08-18 21:39:54,848] {scheduler_job.py:181} INFO - Started process (PID=38) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:39:54,849] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:39:54,850] {logging_mixin.py:104} INFO - [2023-08-18 21:39:54,850] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:39:54,928] {logging_mixin.py:104} INFO - [2023-08-18 21:39:54,926] {dagbag.py:329} ERROR - Failed to import: /usr/local/airflow/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/master_dag.py", line 59, in <module>
+    run_worker = DockerOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 506, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: run_worker_container). Invalid arguments were:
+**kwargs: {'volumes': ['./output:/app/output']}
+[2023-08-18 21:39:54,929] {scheduler_job.py:644} WARNING - No viable dags retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:39:54,959] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.115 seconds
+[2023-08-18 21:40:25,469] {scheduler_job.py:181} INFO - Started process (PID=40) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:40:25,481] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:40:25,494] {logging_mixin.py:104} INFO - [2023-08-18 21:40:25,494] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:40:25,671] {logging_mixin.py:104} INFO - [2023-08-18 21:40:25,669] {dagbag.py:329} ERROR - Failed to import: /usr/local/airflow/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/master_dag.py", line 59, in <module>
+    run_worker = DockerOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 506, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: run_worker_container). Invalid arguments were:
+**kwargs: {'volumes': ['./output:/app/output']}
+[2023-08-18 21:40:25,673] {scheduler_job.py:644} WARNING - No viable dags retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:40:25,729] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.271 seconds
+[2023-08-18 21:40:56,212] {scheduler_job.py:181} INFO - Started process (PID=42) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:40:56,214] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:40:56,215] {logging_mixin.py:104} INFO - [2023-08-18 21:40:56,215] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:40:56,280] {logging_mixin.py:104} INFO - [2023-08-18 21:40:56,278] {dagbag.py:329} ERROR - Failed to import: /usr/local/airflow/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/master_dag.py", line 59, in <module>
+    run_worker = DockerOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 506, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: run_worker_container). Invalid arguments were:
+**kwargs: {'volumes': ['./output:/app/output']}
+[2023-08-18 21:40:56,281] {scheduler_job.py:644} WARNING - No viable dags retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:40:56,311] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.103 seconds
+[2023-08-18 21:41:26,888] {scheduler_job.py:181} INFO - Started process (PID=44) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:41:26,890] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:41:26,891] {logging_mixin.py:104} INFO - [2023-08-18 21:41:26,891] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:41:27,001] {logging_mixin.py:104} INFO - [2023-08-18 21:41:26,996] {dagbag.py:329} ERROR - Failed to import: /usr/local/airflow/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/master_dag.py", line 59, in <module>
+    run_worker = DockerOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 506, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: run_worker_container). Invalid arguments were:
+**kwargs: {'volumes': ['./output:/app/output']}
+[2023-08-18 21:41:27,003] {scheduler_job.py:644} WARNING - No viable dags retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:41:27,052] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.168 seconds
+[2023-08-18 21:42:43,978] {scheduler_job.py:181} INFO - Started process (PID=18) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:42:43,980] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:42:43,982] {logging_mixin.py:104} INFO - [2023-08-18 21:42:43,982] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:42:44,128] {scheduler_job.py:642} INFO - DAG(s) dict_keys(['master_dag']) retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:42:44,166] {logging_mixin.py:104} INFO - [2023-08-18 21:42:44,163] {dag.py:1833} INFO - Sync 1 DAGs
+[2023-08-18 21:42:44,198] {logging_mixin.py:104} INFO - [2023-08-18 21:42:44,198] {dag.py:2306} INFO - Setting next_dagrun for master_dag to 2023-08-17 21:42:44.197567+00:00
+[2023-08-18 21:42:44,247] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.272 seconds
+[2023-08-18 21:43:14,324] {scheduler_job.py:181} INFO - Started process (PID=20) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:43:14,325] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:43:14,327] {logging_mixin.py:104} INFO - [2023-08-18 21:43:14,326] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:43:14,395] {scheduler_job.py:642} INFO - DAG(s) dict_keys(['master_dag']) retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:43:14,408] {logging_mixin.py:104} INFO - [2023-08-18 21:43:14,407] {dag.py:1833} INFO - Sync 1 DAGs
+[2023-08-18 21:43:14,419] {logging_mixin.py:104} INFO - [2023-08-18 21:43:14,418] {dag.py:2306} INFO - Setting next_dagrun for master_dag to 2023-08-17 21:43:14.418650+00:00
+[2023-08-18 21:43:14,434] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.116 seconds
+[2023-08-18 21:43:45,025] {scheduler_job.py:181} INFO - Started process (PID=22) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:43:45,035] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:43:45,042] {logging_mixin.py:104} INFO - [2023-08-18 21:43:45,042] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:43:45,220] {scheduler_job.py:642} INFO - DAG(s) dict_keys(['master_dag']) retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:43:45,243] {logging_mixin.py:104} INFO - [2023-08-18 21:43:45,242] {dag.py:1833} INFO - Sync 1 DAGs
+[2023-08-18 21:43:45,271] {logging_mixin.py:104} INFO - [2023-08-18 21:43:45,271] {dag.py:2306} INFO - Setting next_dagrun for master_dag to 2023-08-17 21:43:45.270835+00:00
+[2023-08-18 21:43:45,304] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.289 seconds
+[2023-08-18 21:44:15,817] {scheduler_job.py:181} INFO - Started process (PID=24) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:44:15,820] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:44:15,822] {logging_mixin.py:104} INFO - [2023-08-18 21:44:15,822] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:44:15,897] {scheduler_job.py:642} INFO - DAG(s) dict_keys(['master_dag']) retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:44:15,909] {logging_mixin.py:104} INFO - [2023-08-18 21:44:15,909] {dag.py:1833} INFO - Sync 1 DAGs
+[2023-08-18 21:44:15,923] {logging_mixin.py:104} INFO - [2023-08-18 21:44:15,923] {dag.py:2306} INFO - Setting next_dagrun for master_dag to 2023-08-17 21:44:15.922555+00:00
+[2023-08-18 21:44:15,944] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.133 seconds
+[2023-08-18 21:44:46,418] {scheduler_job.py:181} INFO - Started process (PID=26) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:44:46,422] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:44:46,424] {logging_mixin.py:104} INFO - [2023-08-18 21:44:46,423] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:44:46,530] {scheduler_job.py:642} INFO - DAG(s) dict_keys(['master_dag']) retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:44:46,544] {logging_mixin.py:104} INFO - [2023-08-18 21:44:46,544] {dag.py:1833} INFO - Sync 1 DAGs
+[2023-08-18 21:44:46,555] {logging_mixin.py:104} INFO - [2023-08-18 21:44:46,555] {dag.py:2306} INFO - Setting next_dagrun for master_dag to 2023-08-17 21:44:46.555228+00:00
+[2023-08-18 21:44:46,583] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.173 seconds
+[2023-08-18 21:45:12,135] {scheduler_job.py:181} INFO - Started process (PID=28) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:45:12,148] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:45:12,154] {logging_mixin.py:104} INFO - [2023-08-18 21:45:12,153] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:45:12,244] {logging_mixin.py:104} INFO - [2023-08-18 21:45:12,242] {dagbag.py:329} ERROR - Failed to import: /usr/local/airflow/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/master_dag.py", line 37, in <module>
+    run_worker = DockerOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 506, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: run_worker_container). Invalid arguments were:
+**kwargs: {'volumes': ['./output:/app/output']}
+[2023-08-18 21:45:12,246] {scheduler_job.py:644} WARNING - No viable dags retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:45:12,278] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.161 seconds
+[2023-08-18 21:45:42,698] {scheduler_job.py:181} INFO - Started process (PID=30) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:45:42,701] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:45:42,705] {logging_mixin.py:104} INFO - [2023-08-18 21:45:42,704] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:45:42,814] {logging_mixin.py:104} INFO - [2023-08-18 21:45:42,812] {dagbag.py:329} ERROR - Failed to import: /usr/local/airflow/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/master_dag.py", line 37, in <module>
+    run_worker = DockerOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 506, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: run_worker_container). Invalid arguments were:
+**kwargs: {'volumes': ['./output:/app/output']}
+[2023-08-18 21:45:42,814] {scheduler_job.py:644} WARNING - No viable dags retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:45:42,844] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.153 seconds
+[2023-08-18 21:46:13,308] {scheduler_job.py:181} INFO - Started process (PID=32) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:46:13,311] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:46:13,312] {logging_mixin.py:104} INFO - [2023-08-18 21:46:13,312] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:46:13,372] {logging_mixin.py:104} INFO - [2023-08-18 21:46:13,370] {dagbag.py:329} ERROR - Failed to import: /usr/local/airflow/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/master_dag.py", line 37, in <module>
+    run_worker = DockerOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 506, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: run_worker_container). Invalid arguments were:
+**kwargs: {'volumes': ['./output:/app/output']}
+[2023-08-18 21:46:13,373] {scheduler_job.py:644} WARNING - No viable dags retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:46:13,402] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.099 seconds
+[2023-08-18 21:47:30,606] {scheduler_job.py:181} INFO - Started process (PID=18) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:47:30,608] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:47:30,609] {logging_mixin.py:104} INFO - [2023-08-18 21:47:30,609] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:47:30,668] {logging_mixin.py:104} INFO - [2023-08-18 21:47:30,667] {dagbag.py:329} ERROR - Failed to import: /usr/local/airflow/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/master_dag.py", line 37, in <module>
+    run_worker = DockerOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 506, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: run_worker_container). Invalid arguments were:
+**kwargs: {'volumes': ['./output:/app/output']}
+[2023-08-18 21:47:30,669] {scheduler_job.py:644} WARNING - No viable dags retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:47:30,695] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.093 seconds
+[2023-08-18 21:48:00,898] {scheduler_job.py:181} INFO - Started process (PID=20) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:48:00,901] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:48:00,903] {logging_mixin.py:104} INFO - [2023-08-18 21:48:00,903] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:48:00,979] {logging_mixin.py:104} INFO - [2023-08-18 21:48:00,978] {dagbag.py:329} ERROR - Failed to import: /usr/local/airflow/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/master_dag.py", line 37, in <module>
+    run_worker = DockerOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 506, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: run_worker_container). Invalid arguments were:
+**kwargs: {'volumes': ['./output:/app/output']}
+[2023-08-18 21:48:00,981] {scheduler_job.py:644} WARNING - No viable dags retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:48:01,008] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.118 seconds
+[2023-08-18 21:48:31,690] {scheduler_job.py:181} INFO - Started process (PID=22) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:48:31,697] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:48:31,706] {logging_mixin.py:104} INFO - [2023-08-18 21:48:31,701] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:48:31,975] {logging_mixin.py:104} INFO - [2023-08-18 21:48:31,969] {dagbag.py:329} ERROR - Failed to import: /usr/local/airflow/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/master_dag.py", line 37, in <module>
+    run_worker = DockerOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 506, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: run_worker_container). Invalid arguments were:
+**kwargs: {'volumes': ['./output:/app/output']}
+[2023-08-18 21:48:32,008] {scheduler_job.py:644} WARNING - No viable dags retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:48:32,085] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.471 seconds
+[2023-08-18 21:49:02,861] {scheduler_job.py:181} INFO - Started process (PID=24) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:49:02,865] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:49:02,866] {logging_mixin.py:104} INFO - [2023-08-18 21:49:02,866] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:49:02,939] {logging_mixin.py:104} INFO - [2023-08-18 21:49:02,937] {dagbag.py:329} ERROR - Failed to import: /usr/local/airflow/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/master_dag.py", line 37, in <module>
+    run_worker = DockerOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 506, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: run_worker_container). Invalid arguments were:
+**kwargs: {'volumes': ['./output:/app/output']}
+[2023-08-18 21:49:02,940] {scheduler_job.py:644} WARNING - No viable dags retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:49:02,969] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.115 seconds
+[2023-08-18 21:49:33,489] {scheduler_job.py:181} INFO - Started process (PID=26) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:49:33,493] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:49:33,495] {logging_mixin.py:104} INFO - [2023-08-18 21:49:33,495] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:49:33,622] {logging_mixin.py:104} INFO - [2023-08-18 21:49:33,619] {dagbag.py:329} ERROR - Failed to import: /usr/local/airflow/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/master_dag.py", line 37, in <module>
+    run_worker = DockerOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 506, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: run_worker_container). Invalid arguments were:
+**kwargs: {'volumes': ['./output:/app/output']}
+[2023-08-18 21:49:33,623] {scheduler_job.py:644} WARNING - No viable dags retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:49:33,646] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.164 seconds
+[2023-08-18 21:49:41,899] {scheduler_job.py:181} INFO - Started process (PID=28) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:49:41,902] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:49:41,903] {logging_mixin.py:104} INFO - [2023-08-18 21:49:41,903] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:49:41,969] {scheduler_job.py:642} INFO - DAG(s) dict_keys(['master_dag']) retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:49:43,609] {logging_mixin.py:104} INFO - [2023-08-18 21:49:43,608] {dag.py:1833} INFO - Sync 1 DAGs
+[2023-08-18 21:49:43,615] {logging_mixin.py:104} INFO - [2023-08-18 21:49:43,615] {dag.py:1852} INFO - Creating ORM DAG for master_dag
+[2023-08-18 21:49:43,619] {logging_mixin.py:104} INFO - [2023-08-18 21:49:43,619] {dag.py:2306} INFO - Setting next_dagrun for master_dag to 2023-08-17 21:49:43.619406+00:00
+[2023-08-18 21:49:43,650] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 1.756 seconds
+[2023-08-18 21:49:48,911] {scheduler_job.py:181} INFO - Started process (PID=33) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:49:48,914] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:49:48,915] {logging_mixin.py:104} INFO - [2023-08-18 21:49:48,915] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:49:49,001] {scheduler_job.py:642} INFO - DAG(s) dict_keys(['master_dag']) retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:49:49,012] {logging_mixin.py:104} INFO - [2023-08-18 21:49:49,012] {dag.py:1833} INFO - Sync 1 DAGs
+[2023-08-18 21:49:49,031] {logging_mixin.py:104} INFO - [2023-08-18 21:49:49,030] {dag.py:2306} INFO - Setting next_dagrun for master_dag to 2023-08-17 21:49:49.030078+00:00
+[2023-08-18 21:49:49,067] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.163 seconds
