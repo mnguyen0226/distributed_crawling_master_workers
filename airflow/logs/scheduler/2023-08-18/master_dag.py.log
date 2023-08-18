@@ -1,0 +1,112 @@
+[2023-08-18 21:00:22,483] {scheduler_job.py:181} INFO - Started process (PID=19) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:00:22,485] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:00:22,486] {logging_mixin.py:104} INFO - [2023-08-18 21:00:22,485] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:00:22,548] {scheduler_job.py:642} INFO - DAG(s) dict_keys(['master_dag']) retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:00:22,561] {logging_mixin.py:104} INFO - [2023-08-18 21:00:22,560] {dag.py:1833} INFO - Sync 1 DAGs
+[2023-08-18 21:00:22,571] {logging_mixin.py:104} INFO - [2023-08-18 21:00:22,571] {dag.py:2306} INFO - Setting next_dagrun for master_dag to 2023-08-19T00:00:00+00:00
+[2023-08-18 21:00:22,595] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.116 seconds
+[2023-08-18 21:00:53,727] {scheduler_job.py:181} INFO - Started process (PID=21) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:00:53,729] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:00:53,730] {logging_mixin.py:104} INFO - [2023-08-18 21:00:53,730] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:00:53,804] {scheduler_job.py:642} INFO - DAG(s) dict_keys(['master_dag']) retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:00:53,818] {logging_mixin.py:104} INFO - [2023-08-18 21:00:53,818] {dag.py:1833} INFO - Sync 1 DAGs
+[2023-08-18 21:00:53,835] {logging_mixin.py:104} INFO - [2023-08-18 21:00:53,834] {dag.py:2306} INFO - Setting next_dagrun for master_dag to 2023-08-19T00:00:00+00:00
+[2023-08-18 21:00:53,861] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.140 seconds
+[2023-08-18 21:01:24,117] {scheduler_job.py:181} INFO - Started process (PID=23) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:01:24,118] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:01:24,119] {logging_mixin.py:104} INFO - [2023-08-18 21:01:24,119] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:01:24,178] {scheduler_job.py:642} INFO - DAG(s) dict_keys(['master_dag']) retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:01:24,191] {logging_mixin.py:104} INFO - [2023-08-18 21:01:24,190] {dag.py:1833} INFO - Sync 1 DAGs
+[2023-08-18 21:01:24,202] {logging_mixin.py:104} INFO - [2023-08-18 21:01:24,202] {dag.py:2306} INFO - Setting next_dagrun for master_dag to 2023-08-19T00:00:00+00:00
+[2023-08-18 21:01:24,226] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.113 seconds
+[2023-08-18 21:01:54,522] {scheduler_job.py:181} INFO - Started process (PID=25) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:01:54,524] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:01:54,525] {logging_mixin.py:104} INFO - [2023-08-18 21:01:54,525] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:01:54,597] {scheduler_job.py:642} INFO - DAG(s) dict_keys(['master_dag']) retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:01:54,610] {logging_mixin.py:104} INFO - [2023-08-18 21:01:54,609] {dag.py:1833} INFO - Sync 1 DAGs
+[2023-08-18 21:01:54,621] {logging_mixin.py:104} INFO - [2023-08-18 21:01:54,621] {dag.py:2306} INFO - Setting next_dagrun for master_dag to 2023-08-19T00:00:00+00:00
+[2023-08-18 21:01:54,646] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.129 seconds
+[2023-08-18 21:11:34,532] {scheduler_job.py:181} INFO - Started process (PID=18) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:11:34,535] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:11:34,536] {logging_mixin.py:104} INFO - [2023-08-18 21:11:34,536] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:11:34,611] {scheduler_job.py:642} INFO - DAG(s) dict_keys(['master_dag']) retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:11:34,620] {logging_mixin.py:104} INFO - [2023-08-18 21:11:34,620] {dag.py:1833} INFO - Sync 1 DAGs
+[2023-08-18 21:11:34,631] {logging_mixin.py:104} INFO - [2023-08-18 21:11:34,631] {dag.py:2306} INFO - Setting next_dagrun for master_dag to 2023-08-19T00:00:00+00:00
+[2023-08-18 21:11:34,657] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.128 seconds
+[2023-08-18 21:12:04,830] {scheduler_job.py:181} INFO - Started process (PID=20) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:12:04,833] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:12:04,836] {logging_mixin.py:104} INFO - [2023-08-18 21:12:04,836] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:12:04,941] {scheduler_job.py:642} INFO - DAG(s) dict_keys(['master_dag']) retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:12:04,955] {logging_mixin.py:104} INFO - [2023-08-18 21:12:04,955] {dag.py:1833} INFO - Sync 1 DAGs
+[2023-08-18 21:12:04,969] {logging_mixin.py:104} INFO - [2023-08-18 21:12:04,969] {dag.py:2306} INFO - Setting next_dagrun for master_dag to 2023-08-19T00:00:00+00:00
+[2023-08-18 21:12:04,996] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.174 seconds
+[2023-08-18 21:12:35,509] {scheduler_job.py:181} INFO - Started process (PID=22) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:12:35,511] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:12:35,512] {logging_mixin.py:104} INFO - [2023-08-18 21:12:35,512] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:12:35,606] {scheduler_job.py:642} INFO - DAG(s) dict_keys(['master_dag']) retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:12:35,618] {logging_mixin.py:104} INFO - [2023-08-18 21:12:35,618] {dag.py:1833} INFO - Sync 1 DAGs
+[2023-08-18 21:12:35,631] {logging_mixin.py:104} INFO - [2023-08-18 21:12:35,631] {dag.py:2306} INFO - Setting next_dagrun for master_dag to 2023-08-19T00:00:00+00:00
+[2023-08-18 21:12:35,663] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.159 seconds
+[2023-08-18 21:13:05,808] {scheduler_job.py:181} INFO - Started process (PID=24) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:13:05,811] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:13:05,813] {logging_mixin.py:104} INFO - [2023-08-18 21:13:05,813] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:13:05,920] {scheduler_job.py:642} INFO - DAG(s) dict_keys(['master_dag']) retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:13:05,935] {logging_mixin.py:104} INFO - [2023-08-18 21:13:05,935] {dag.py:1833} INFO - Sync 1 DAGs
+[2023-08-18 21:13:05,947] {logging_mixin.py:104} INFO - [2023-08-18 21:13:05,947] {dag.py:2306} INFO - Setting next_dagrun for master_dag to 2023-08-19T00:00:00+00:00
+[2023-08-18 21:13:05,974] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.176 seconds
+[2023-08-18 21:13:36,737] {scheduler_job.py:181} INFO - Started process (PID=26) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:13:36,741] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:13:36,743] {logging_mixin.py:104} INFO - [2023-08-18 21:13:36,742] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:13:36,820] {scheduler_job.py:642} INFO - DAG(s) dict_keys(['master_dag']) retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:13:36,832] {logging_mixin.py:104} INFO - [2023-08-18 21:13:36,831] {dag.py:1833} INFO - Sync 1 DAGs
+[2023-08-18 21:13:36,846] {logging_mixin.py:104} INFO - [2023-08-18 21:13:36,846] {dag.py:2306} INFO - Setting next_dagrun for master_dag to 2023-08-19T00:00:00+00:00
+[2023-08-18 21:13:36,874] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.144 seconds
+[2023-08-18 21:14:06,994] {scheduler_job.py:181} INFO - Started process (PID=28) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:14:06,998] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:14:07,001] {logging_mixin.py:104} INFO - [2023-08-18 21:14:07,000] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:14:07,098] {scheduler_job.py:642} INFO - DAG(s) dict_keys(['master_dag']) retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:14:07,117] {logging_mixin.py:104} INFO - [2023-08-18 21:14:07,117] {dag.py:1833} INFO - Sync 1 DAGs
+[2023-08-18 21:14:07,132] {logging_mixin.py:104} INFO - [2023-08-18 21:14:07,132] {dag.py:2306} INFO - Setting next_dagrun for master_dag to 2023-08-19T00:00:00+00:00
+[2023-08-18 21:14:07,162] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.175 seconds
+[2023-08-18 21:14:37,951] {scheduler_job.py:181} INFO - Started process (PID=30) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:14:37,953] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:14:37,954] {logging_mixin.py:104} INFO - [2023-08-18 21:14:37,954] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:14:38,064] {scheduler_job.py:642} INFO - DAG(s) dict_keys(['master_dag']) retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:14:38,083] {logging_mixin.py:104} INFO - [2023-08-18 21:14:38,083] {dag.py:1833} INFO - Sync 1 DAGs
+[2023-08-18 21:14:38,096] {logging_mixin.py:104} INFO - [2023-08-18 21:14:38,096] {dag.py:2306} INFO - Setting next_dagrun for master_dag to 2023-08-19T00:00:00+00:00
+[2023-08-18 21:14:38,116] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.169 seconds
+[2023-08-18 21:15:08,252] {scheduler_job.py:181} INFO - Started process (PID=32) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:15:08,257] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:15:08,259] {logging_mixin.py:104} INFO - [2023-08-18 21:15:08,259] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:15:08,337] {scheduler_job.py:642} INFO - DAG(s) dict_keys(['master_dag']) retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:15:08,350] {logging_mixin.py:104} INFO - [2023-08-18 21:15:08,350] {dag.py:1833} INFO - Sync 1 DAGs
+[2023-08-18 21:15:08,362] {logging_mixin.py:104} INFO - [2023-08-18 21:15:08,361] {dag.py:2306} INFO - Setting next_dagrun for master_dag to 2023-08-19T00:00:00+00:00
+[2023-08-18 21:15:08,430] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.186 seconds
+[2023-08-18 21:15:39,048] {scheduler_job.py:181} INFO - Started process (PID=34) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:15:39,050] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:15:39,051] {logging_mixin.py:104} INFO - [2023-08-18 21:15:39,051] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:15:39,160] {scheduler_job.py:642} INFO - DAG(s) dict_keys(['master_dag']) retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:15:39,174] {logging_mixin.py:104} INFO - [2023-08-18 21:15:39,174] {dag.py:1833} INFO - Sync 1 DAGs
+[2023-08-18 21:15:39,189] {logging_mixin.py:104} INFO - [2023-08-18 21:15:39,189] {dag.py:2306} INFO - Setting next_dagrun for master_dag to 2023-08-19T00:00:00+00:00
+[2023-08-18 21:15:39,218] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.173 seconds
+[2023-08-18 21:16:30,089] {scheduler_job.py:181} INFO - Started process (PID=18) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:16:30,090] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:16:30,091] {logging_mixin.py:104} INFO - [2023-08-18 21:16:30,091] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:16:30,160] {scheduler_job.py:642} INFO - DAG(s) dict_keys(['master_dag']) retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:16:30,172] {logging_mixin.py:104} INFO - [2023-08-18 21:16:30,172] {dag.py:1833} INFO - Sync 1 DAGs
+[2023-08-18 21:16:30,185] {logging_mixin.py:104} INFO - [2023-08-18 21:16:30,185] {dag.py:2306} INFO - Setting next_dagrun for master_dag to 2023-08-19T00:00:00+00:00
+[2023-08-18 21:16:30,217] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.132 seconds
+[2023-08-18 21:17:00,320] {scheduler_job.py:181} INFO - Started process (PID=20) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:17:00,323] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:17:00,326] {logging_mixin.py:104} INFO - [2023-08-18 21:17:00,325] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:17:00,398] {scheduler_job.py:642} INFO - DAG(s) dict_keys(['master_dag']) retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:17:00,416] {logging_mixin.py:104} INFO - [2023-08-18 21:17:00,415] {dag.py:1833} INFO - Sync 1 DAGs
+[2023-08-18 21:17:00,432] {logging_mixin.py:104} INFO - [2023-08-18 21:17:00,432] {dag.py:2306} INFO - Setting next_dagrun for master_dag to 2023-08-19T00:00:00+00:00
+[2023-08-18 21:17:00,448] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.135 seconds
+[2023-08-18 21:17:30,950] {scheduler_job.py:181} INFO - Started process (PID=22) to work on /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:17:30,952] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/master_dag.py for tasks to queue
+[2023-08-18 21:17:30,953] {logging_mixin.py:104} INFO - [2023-08-18 21:17:30,953] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:17:31,034] {scheduler_job.py:642} INFO - DAG(s) dict_keys(['master_dag']) retrieved from /usr/local/airflow/dags/master_dag.py
+[2023-08-18 21:17:31,051] {logging_mixin.py:104} INFO - [2023-08-18 21:17:31,050] {dag.py:1833} INFO - Sync 1 DAGs
+[2023-08-18 21:17:31,068] {logging_mixin.py:104} INFO - [2023-08-18 21:17:31,068] {dag.py:2306} INFO - Setting next_dagrun for master_dag to 2023-08-19T00:00:00+00:00
+[2023-08-18 21:17:31,105] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/master_dag.py took 0.158 seconds

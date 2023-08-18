@@ -192,3 +192,8 @@ For 3 workers:
 2023-08-18 01:42:02 [root] INFO: Spider (701e7eff38bb) ran for 15.26 seconds.
 2023-08-18 01:42:02 [root] INFO: Spider (d37dba0878bd) ran for 15.22 seconds.
 ```
+
+Clear Local Cache: Before rebuilding your Docker images, clear the local Docker cache to avoid any possible caching issues. You can do this by running:
+```
+docker system prune -a
+```
