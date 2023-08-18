@@ -70,3 +70,47 @@ services:
       - REDIS_URL=redis://default:T4p3kJQRmQDNRqxt1tG97qQWGKRFG6fQ@redis-12469.c81.us-east-1-2.ec2.cloud.redislabs.com:12469
 ```
 
+## How to measure run time?
+To log the scraping time for a single worker, you can add some custom logging code in your Scrapy spider. Here's a step-by-step guide:
+
+Modify Your Spider:
+
+Open mini_spider.py inside the spiders directory. At the top, import the necessary modules:
+
+python
+Copy code
+import logging
+import time
+Next, you'll want to record the start time and end time of your spider's scraping process.
+
+In your spider class, override the __init__ method to set the start time:
+
+```python
+def __init__(self, *args, **kwargs):
+    super().__init__(*args, **kwargs)
+    self.start_time = time.time()
+```
+
+At the end of the spider's run, you'll want to record the end time and calculate the total scraping time. You can do this by overriding the closed method:
+
+```python
+def closed(self, reason):
+    end_time = time.time()
+    elapsed_time = end_time - self.start_time
+    logging.info(f"Spider ran for {elapsed_time:.2f} seconds.")
+    ```
+Ensure Logging Settings:
+
+Ensure your Scrapy settings (settings.py) have the following configurations to show the log message:
+
+```python
+LOG_LEVEL = 'INFO'
+```
+
+Run the Spider:
+
+Now when you run the spider using Docker Compose, you should see a log message at the end of the spider's run indicating how long the spider ran for.
+
+Given that you've set up Docker and Docker Compose, the log message will show in the console output when you run docker compose up.
+
+Note: The method closed is called when a spider finishes its run for any reason. By overriding it, you can perform any necessary teardown or logging like we did above

@@ -108,3 +108,7 @@ REDIS_URL = "redis://default:T4p3kJQRmQDNRqxt1tG97qQWGKRFG6fQ@redis-12469.c81.us
 FEEDS = {"/app/output/data_global.csv": {"format": "csv"}}
 
 DOWNLOAD_DELAY = 2
+
+# log of worker run time
+LOG_LEVEL = 'INFO'
+LOG_FILE = '/app/output/scrapy.log'  # This will save logs to the 'output' directory in your project.

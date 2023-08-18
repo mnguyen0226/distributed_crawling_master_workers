@@ -1,9 +1,15 @@
 import scrapy
 from scrapy_redis.spiders import RedisSpider
 from urllib.parse import parse_qs, urlparse
+import logging
+import time
 
 
 class MiniSpiderSpider(RedisSpider):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.start_time = time.time()
+
     name = "mini_spider"
     # allowed_domains = ["mnguyen0226.github.io"]
     # start_urls = ["https://mnguyen0226.github.io/"]
@@ -23,3 +29,8 @@ class MiniSpiderSpider(RedisSpider):
                 "author": quote.css("small.author::text").get(),
                 "tags": quote.css("div.tags a.tag::text").getall(),
             }
+
+    def closed(self, reason):
+        end_time = time.time()
+        elapsed_time = end_time - self.start_time
+        logging.info(f"Spider ran for {elapsed_time:.2f} seconds.")
