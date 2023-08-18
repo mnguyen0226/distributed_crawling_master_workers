@@ -3,12 +3,14 @@ from scrapy_redis.spiders import RedisSpider
 from urllib.parse import parse_qs, urlparse
 import logging
 import time
+import socket
 
 
 class MiniSpiderSpider(RedisSpider):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.start_time = time.time()
+        self.instance_id = socket.gethostname()
 
     name = "mini_spider"
     # allowed_domains = ["mnguyen0226.github.io"]
@@ -33,4 +35,4 @@ class MiniSpiderSpider(RedisSpider):
     def closed(self, reason):
         end_time = time.time()
         elapsed_time = end_time - self.start_time
-        logging.info(f"Spider ran for {elapsed_time:.2f} seconds.")
+        logging.info(f"Spider ({self.instance_id}) ran for {elapsed_time:.2f} seconds.")

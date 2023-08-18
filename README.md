@@ -186,8 +186,9 @@ DOWNLOAD_DELAY = 2
 
 For single worker: `2023-08-18 01:22:17 [root] INFO: Spider ran for 30.27 seconds.`
 
-For 2 workers:
-
 For 3 workers:
-
-For 4 workers: 
+```sh
+2023-08-18 01:42:02 [root] INFO: Spider (645ec1b83bc3) ran for 15.33 seconds.
+2023-08-18 01:42:02 [root] INFO: Spider (701e7eff38bb) ran for 15.26 seconds.
+2023-08-18 01:42:02 [root] INFO: Spider (d37dba0878bd) ran for 15.22 seconds.
+```
