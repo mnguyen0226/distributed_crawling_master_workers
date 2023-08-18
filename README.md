@@ -170,3 +170,24 @@ docker compose down -v
 docker compose build
 docker compose up
 ```
+
+## Comparison 1 workers
+```sh
+# mini_spider.py
+    # Number of url to fetch from redis on each attempt
+    redis_batch_size = 1
+
+    # Max idle time(in seconds) before the spider stops checking redis and shuts down
+    max_idle_time = 10
+
+# settings.py
+DOWNLOAD_DELAY = 2
+```
+
+For single worker: `2023-08-18 01:22:17 [root] INFO: Spider ran for 30.27 seconds.`
+
+For 2 workers:
+
+For 3 workers:
+
+For 4 workers: 
