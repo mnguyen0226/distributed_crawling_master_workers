@@ -192,3 +192,49 @@ For 3 workers:
 2023-08-18 01:42:02 [root] INFO: Spider (701e7eff38bb) ran for 15.26 seconds.
 2023-08-18 01:42:02 [root] INFO: Spider (d37dba0878bd) ran for 15.22 seconds.
 ```
+
+# Airflow Integration
+To start here are some steps
+
+### Install Apache Airflow
+```sh
+pip install apache-airflow
+```
+
+### Initialize Airflow Directory
+For separate Airflow instances (master and worker):
+```sh
+distributed_crawling_master_workers/airflow$ mkdir airflow_master
+distributed_crawling_master_workers/airflow$ mkdir airflow_worker
+```
+
+For each directory, set the AIRFLOW_HOME environment variable to point to the respective directory and then run initdb:
+```sh
+# master
+export AIRFLOW_HOME=$(pwd)/airflow_master
+airflow db init
+
+# worker
+export AIRFLOW_HOME=$(pwd)/airflow_worker
+airflow db init
+```
+
+### Create DAGs
+Inside the `dags` subdirectory in your Airflow directory (or directories), create your DAG files:
+
+For separate instances: `airflow_master/dags` and `airflow_worker/dags`
+
+Fill out the code for dag
+
+### Set up Webserver & Scheduler (Run locally)
+```sh
+# master
+export AIRFLOW_HOME=$(pwd)/airflow_master
+airflow webserver
+
+# worker
+export AIRFLOW_HOME=$(pwd)/airflow_master
+airflow scheduler
+```
+
+If run locally good, then dockerize

@@ -1,7 +1,27 @@
+# version: '3.8'
+
+# services:
+
+#   master:
+#     build:
+#       context: ./master
+#       dockerfile: Dockerfile
+#     environment:
+#       - REDIS_URL=redis://default:T4p3kJQRmQDNRqxt1tG97qQWGKRFG6fQ@redis-12469.c81.us-east-1-2.ec2.cloud.redislabs.com:12469
+
+#   worker:
+#     image: custom_worker_image:latest  # name the image being built
+#     build:
+#       context: ./worker
+#       dockerfile: Dockerfile
+#     volumes:
+#       - ./output:/app/output
+#     environment:
+#       - REDIS_URL=redis://default:T4p3kJQRmQDNRqxt1tG97qQWGKRFG6fQ@redis-12469.c81.us-east-1-2.ec2.cloud.redislabs.com:12469
+
 version: '3.8'
 
 services:
-
   master:
     build:
       context: ./master
@@ -10,7 +30,7 @@ services:
       - REDIS_URL=redis://default:T4p3kJQRmQDNRqxt1tG97qQWGKRFG6fQ@redis-12469.c81.us-east-1-2.ec2.cloud.redislabs.com:12469
 
   worker:
-    image: custom_worker_image:latest  # name the image being built
+    image: custom_worker_image:latest
     build:
       context: ./worker
       dockerfile: Dockerfile
@@ -18,3 +38,45 @@ services:
       - ./output:/app/output
     environment:
       - REDIS_URL=redis://default:T4p3kJQRmQDNRqxt1tG97qQWGKRFG6fQ@redis-12469.c81.us-east-1-2.ec2.cloud.redislabs.com:12469
+
+  master_airflow_webserver:
+    build:
+      context: ./airflow
+      dockerfile: Dockerfile
+    command: webserver
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./airflow/airflow_master/dags:/usr/local/airflow/dags
+
+  master_airflow_scheduler:
+    build:
+      context: ./airflow
+      dockerfile: Dockerfile
+    command: scheduler
+    environment:
+      - AIRFLOW__CORE__DEFAULT_TIMEZONE=UTC
+      - AIRFLOW__SCHEDULER__DAG_DIR_LIST_INTERVAL=60
+    volumes:
+      - ./airflow/airflow_master/dags:/usr/local/airflow/dags
+
+  worker_airflow_webserver:
+    build:
+      context: ./airflow
+      dockerfile: Dockerfile
+    command: webserver
+    ports:
+      - "8081:8080"
+    volumes:
+      - ./airflow/airflow_worker/dags:/usr/local/airflow/dags
+
+  worker_airflow_scheduler:
+    build:
+      context: ./airflow
+      dockerfile: Dockerfile
+    command: scheduler
+    environment:
+      - AIRFLOW__CORE__DEFAULT_TIMEZONE=UTC
+      - AIRFLOW__SCHEDULER__DAG_DIR_LIST_INTERVAL=60
+    volumes:
+      - ./airflow/airflow_worker/dags:/usr/local/airflow/dags
