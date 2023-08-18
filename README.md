@@ -114,3 +114,59 @@ Now when you run the spider using Docker Compose, you should see a log message a
 Given that you've set up Docker and Docker Compose, the log message will show in the console output when you run docker compose up.
 
 Note: The method closed is called when a spider finishes its run for any reason. By overriding it, you can perform any necessary teardown or logging like we did above
+
+## How to fix the error
+Create a customed docker image
+
+```sh
+  File "/usr/local/lib/python3.9/site-packages/scrapy_redis/spiders.py", line 197, in schedule_next_requests
+    self.crawler.engine.crawl(req, spider=self)
+TypeError: crawl() got an unexpected keyword argument 'spider'
+```
+
+Change setting in worker's Docker file
+```sh
+# Set the base image
+FROM python:3.9-slim
+
+# Set the working directory in docker
+WORKDIR /app
+
+# Copy dependencies
+COPY requirements.txt .
+
+# Install dependencies
+RUN pip install --upgrade pip && pip install -r requirements.txt
+
+# Copy the content of the local src directory to the working directory
+COPY mini_scraper/ ./mini_scraper/
+COPY scrapy.cfg .
+
+# Overwrite the original spiders.py with your modified version
+COPY customed_image_files/modified_spiders.py /usr/local/lib/python3.9/site-packages/scrapy_redis/spiders.py
+
+# Specify the command to run on container start
+CMD ["scrapy", "crawl", "mini_spider"]
+```
+
+Then build a Custom Docker Image
+```sh
+docker build -t custom_worker_image ./worker
+```
+
+Build Worker's custom Docker Image
+```
+docker build -t custom_worker_image ./worker
+```
+
+Update docker-compose.yml
+```
+
+```
+
+Run docker-compose
+```
+docker compose down -v
+docker compose build
+docker compose up
+```
