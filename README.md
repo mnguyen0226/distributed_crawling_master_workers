@@ -192,3 +192,6 @@ For 3 workers:
 2023-08-18 01:42:02 [root] INFO: Spider (701e7eff38bb) ran for 15.26 seconds.
 2023-08-18 01:42:02 [root] INFO: Spider (d37dba0878bd) ran for 15.22 seconds.
 ```
+
+# Let's separate the docker compose into 2 sections
+- You have to run 2 threads: to build and to run. Master first then Worker
