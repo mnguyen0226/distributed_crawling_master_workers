@@ -1,0 +1,69 @@
+[2023-08-20 22:45:30,085] {scheduler_job.py:181} INFO - Started process (PID=17) to work on /usr/local/airflow/dags/combined_dag.py
+[2023-08-20 22:45:30,086] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/combined_dag.py for tasks to queue
+[2023-08-20 22:45:30,088] {logging_mixin.py:104} INFO - [2023-08-20 22:45:30,088] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/combined_dag.py
+[2023-08-20 22:45:30,172] {logging_mixin.py:104} INFO - [2023-08-20 22:45:30,170] {dagbag.py:329} ERROR - Failed to import: /usr/local/airflow/dags/combined_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/combined_dag.py", line 37, in <module>
+    run_worker = DockerOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 506, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: run_worker_container). Invalid arguments were:
+**kwargs: {'volumes': ['./output:/app/output']}
+[2023-08-20 22:45:30,173] {scheduler_job.py:644} WARNING - No viable dags retrieved from /usr/local/airflow/dags/combined_dag.py
+[2023-08-20 22:45:30,191] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/combined_dag.py took 0.112 seconds
+[2023-08-20 22:46:00,471] {scheduler_job.py:181} INFO - Started process (PID=18) to work on /usr/local/airflow/dags/combined_dag.py
+[2023-08-20 22:46:00,475] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/combined_dag.py for tasks to queue
+[2023-08-20 22:46:00,477] {logging_mixin.py:104} INFO - [2023-08-20 22:46:00,477] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/combined_dag.py
+[2023-08-20 22:46:00,586] {logging_mixin.py:104} INFO - [2023-08-20 22:46:00,585] {dagbag.py:329} ERROR - Failed to import: /usr/local/airflow/dags/combined_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/combined_dag.py", line 37, in <module>
+    run_worker = DockerOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 506, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: run_worker_container). Invalid arguments were:
+**kwargs: {'volumes': ['./output:/app/output']}
+[2023-08-20 22:46:00,587] {scheduler_job.py:644} WARNING - No viable dags retrieved from /usr/local/airflow/dags/combined_dag.py
+[2023-08-20 22:46:00,617] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/combined_dag.py took 0.154 seconds
+[2023-08-20 22:46:31,113] {scheduler_job.py:181} INFO - Started process (PID=19) to work on /usr/local/airflow/dags/combined_dag.py
+[2023-08-20 22:46:31,116] {scheduler_job.py:632} INFO - Processing file /usr/local/airflow/dags/combined_dag.py for tasks to queue
+[2023-08-20 22:46:31,119] {logging_mixin.py:104} INFO - [2023-08-20 22:46:31,119] {dagbag.py:496} INFO - Filling up the DagBag from /usr/local/airflow/dags/combined_dag.py
+[2023-08-20 22:46:31,226] {logging_mixin.py:104} INFO - [2023-08-20 22:46:31,224] {dagbag.py:329} ERROR - Failed to import: /usr/local/airflow/dags/combined_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/dagbag.py", line 326, in _load_modules_from_file
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/airflow/dags/combined_dag.py", line 37, in <module>
+    run_worker = DockerOperator(
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 177, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 178, in apply_defaults
+    result = func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/baseoperator.py", line 506, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: run_worker_container). Invalid arguments were:
+**kwargs: {'volumes': ['./output:/app/output']}
+[2023-08-20 22:46:31,227] {scheduler_job.py:644} WARNING - No viable dags retrieved from /usr/local/airflow/dags/combined_dag.py
+[2023-08-20 22:46:31,254] {scheduler_job.py:189} INFO - Processing /usr/local/airflow/dags/combined_dag.py took 0.147 seconds
