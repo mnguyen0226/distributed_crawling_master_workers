@@ -1,1 +1,2 @@
+apache-airflow[redis,celery]==2.1.3
 redis

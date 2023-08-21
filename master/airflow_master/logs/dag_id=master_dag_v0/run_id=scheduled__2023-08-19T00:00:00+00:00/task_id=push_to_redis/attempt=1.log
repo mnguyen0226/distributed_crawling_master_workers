@@ -1,0 +1,13 @@
+[2023-08-21T01:05:55.203+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: master_dag_v0.push_to_redis scheduled__2023-08-19T00:00:00+00:00 [queued]>
+[2023-08-21T01:05:55.222+0000] {taskinstance.py:1103} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: master_dag_v0.push_to_redis scheduled__2023-08-19T00:00:00+00:00 [queued]>
+[2023-08-21T01:05:55.222+0000] {taskinstance.py:1308} INFO - Starting attempt 1 of 4
+[2023-08-21T01:05:55.250+0000] {taskinstance.py:1327} INFO - Executing <Task(PythonOperator): push_to_redis> on 2023-08-19 00:00:00+00:00
+[2023-08-21T01:05:55.259+0000] {standard_task_runner.py:57} INFO - Started process 226 to run task
+[2023-08-21T01:05:55.272+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'master_dag_v0', 'push_to_redis', 'scheduled__2023-08-19T00:00:00+00:00', '--job-id', '38', '--raw', '--subdir', 'DAGS_FOLDER/master_dag.py', '--cfg-path', '/tmp/tmpliz4i4l1']
+[2023-08-21T01:05:55.277+0000] {standard_task_runner.py:85} INFO - Job 38: Subtask push_to_redis
+[2023-08-21T01:05:55.386+0000] {task_command.py:410} INFO - Running <TaskInstance: master_dag_v0.push_to_redis scheduled__2023-08-19T00:00:00+00:00 [running]> on host 9dd928f0e077
+[2023-08-21T01:05:55.587+0000] {taskinstance.py:1547} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='master_dag_v0' AIRFLOW_CTX_TASK_ID='push_to_redis' AIRFLOW_CTX_EXECUTION_DATE='2023-08-19T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-08-19T00:00:00+00:00'
+[2023-08-21T01:05:55.813+0000] {python.py:183} INFO - Done. Returned value was: None
+[2023-08-21T01:05:55.846+0000] {taskinstance.py:1350} INFO - Marking task as SUCCESS. dag_id=master_dag_v0, task_id=push_to_redis, execution_date=20230819T000000, start_date=20230821T010555, end_date=20230821T010555
+[2023-08-21T01:05:55.892+0000] {local_task_job_runner.py:225} INFO - Task exited with return code 0
+[2023-08-21T01:05:55.917+0000] {taskinstance.py:2653} INFO - 0 downstream tasks scheduled from follow-on schedule check

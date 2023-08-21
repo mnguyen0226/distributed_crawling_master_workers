@@ -1,0 +1,641 @@
+[2023-08-20T21:00:07.968-0400] {processor.py:157} INFO - Started process (PID=80294) to work on /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:00:07.969-0400] {processor.py:826} INFO - Processing file /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py for tasks to queue
+[2023-08-20T21:00:07.970-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:00:07.969-0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:00:07.972-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:00:07.971-0400] {dagbag.py:350} ERROR - Failed to import: /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/mnguyen0226/anaconda3/envs/learning_scraper/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py", line 21
+    schedule_interval="@daily",
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: keyword argument repeated: schedule_interval
+[2023-08-20T21:00:07.972-0400] {processor.py:838} WARNING - No viable dags retrieved from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:00:08.000-0400] {processor.py:179} INFO - Processing /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py took 0.033 seconds
+[2023-08-20T21:00:58.248-0400] {processor.py:157} INFO - Started process (PID=80829) to work on /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:00:58.249-0400] {processor.py:826} INFO - Processing file /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py for tasks to queue
+[2023-08-20T21:00:58.250-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:00:58.249-0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:00:58.253-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:00:58.252-0400] {dagbag.py:350} ERROR - Failed to import: /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/mnguyen0226/anaconda3/envs/learning_scraper/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py", line 21
+    schedule_interval="@daily",
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: keyword argument repeated: schedule_interval
+[2023-08-20T21:00:58.254-0400] {processor.py:838} WARNING - No viable dags retrieved from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:00:58.280-0400] {processor.py:179} INFO - Processing /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py took 0.034 seconds
+[2023-08-20T21:01:32.043-0400] {processor.py:157} INFO - Started process (PID=80955) to work on /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:01:32.055-0400] {processor.py:826} INFO - Processing file /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py for tasks to queue
+[2023-08-20T21:01:32.056-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:01:32.056-0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:01:32.059-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:01:32.058-0400] {dagbag.py:350} ERROR - Failed to import: /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/mnguyen0226/anaconda3/envs/learning_scraper/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py", line 21
+    schedule_interval="@daily",
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: keyword argument repeated: schedule_interval
+[2023-08-20T21:01:32.060-0400] {processor.py:838} WARNING - No viable dags retrieved from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:01:32.099-0400] {processor.py:179} INFO - Processing /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py took 0.058 seconds
+[2023-08-20T21:02:06.780-0400] {processor.py:157} INFO - Started process (PID=81197) to work on /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:02:06.782-0400] {processor.py:826} INFO - Processing file /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py for tasks to queue
+[2023-08-20T21:02:06.783-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:02:06.782-0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:02:06.789-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:02:06.786-0400] {dagbag.py:350} ERROR - Failed to import: /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/mnguyen0226/anaconda3/envs/learning_scraper/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py", line 21
+    schedule_interval="@daily",
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: keyword argument repeated: schedule_interval
+[2023-08-20T21:02:06.790-0400] {processor.py:838} WARNING - No viable dags retrieved from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:02:06.831-0400] {processor.py:179} INFO - Processing /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py took 0.055 seconds
+[2023-08-20T21:03:07.324-0400] {processor.py:157} INFO - Started process (PID=81331) to work on /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:03:07.325-0400] {processor.py:826} INFO - Processing file /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py for tasks to queue
+[2023-08-20T21:03:07.325-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:03:07.325-0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:03:07.328-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:03:07.327-0400] {dagbag.py:350} ERROR - Failed to import: /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/mnguyen0226/anaconda3/envs/learning_scraper/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py", line 21
+    schedule_interval="@daily",
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: keyword argument repeated: schedule_interval
+[2023-08-20T21:03:07.328-0400] {processor.py:838} WARNING - No viable dags retrieved from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:03:07.357-0400] {processor.py:179} INFO - Processing /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py took 0.036 seconds
+[2023-08-21T01:03:48.737+0000] {processor.py:157} INFO - Started process (PID=164) to work on /opt/airflow/dags/master_dag.py
+[2023-08-21T01:03:48.740+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/master_dag.py for tasks to queue
+[2023-08-21T01:03:48.742+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:03:48.741+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:03:48.752+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:03:48.750+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/master_dag.py", line 21
+    schedule_interval="@daily",
+    ^
+SyntaxError: keyword argument repeated
+[2023-08-21T01:03:48.753+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:03:48.808+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/master_dag.py took 0.076 seconds
+[2023-08-20T21:03:56.246-0400] {processor.py:157} INFO - Started process (PID=82740) to work on /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:03:56.247-0400] {processor.py:826} INFO - Processing file /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py for tasks to queue
+[2023-08-20T21:03:56.248-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:03:56.247-0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:03:56.250-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:03:56.249-0400] {dagbag.py:350} ERROR - Failed to import: /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/mnguyen0226/anaconda3/envs/learning_scraper/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py", line 21
+    schedule_interval="@daily",
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: keyword argument repeated: schedule_interval
+[2023-08-20T21:03:56.251-0400] {processor.py:838} WARNING - No viable dags retrieved from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:03:56.276-0400] {processor.py:179} INFO - Processing /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py took 0.031 seconds
+[2023-08-21T01:04:19.209+0000] {processor.py:157} INFO - Started process (PID=177) to work on /opt/airflow/dags/master_dag.py
+[2023-08-21T01:04:19.211+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/master_dag.py for tasks to queue
+[2023-08-21T01:04:19.214+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:04:19.213+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:04:19.225+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:04:19.222+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/master_dag.py", line 21
+    schedule_interval="@daily",
+    ^
+SyntaxError: keyword argument repeated
+[2023-08-21T01:04:19.226+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:04:19.285+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/master_dag.py took 0.087 seconds
+[2023-08-20T21:04:30.078-0400] {processor.py:157} INFO - Started process (PID=83061) to work on /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:04:30.079-0400] {processor.py:826} INFO - Processing file /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py for tasks to queue
+[2023-08-20T21:04:30.080-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:04:30.079-0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:04:30.085-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:04:30.084-0400] {dagbag.py:350} ERROR - Failed to import: /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/mnguyen0226/anaconda3/envs/learning_scraper/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py", line 21
+    schedule_interval="@daily",
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: keyword argument repeated: schedule_interval
+[2023-08-20T21:04:30.086-0400] {processor.py:838} WARNING - No viable dags retrieved from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:04:30.115-0400] {processor.py:179} INFO - Processing /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py took 0.042 seconds
+[2023-08-21T01:04:43.425+0000] {processor.py:157} INFO - Started process (PID=189) to work on /opt/airflow/dags/master_dag.py
+[2023-08-21T01:04:43.429+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/master_dag.py for tasks to queue
+[2023-08-21T01:04:43.432+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:04:43.431+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:04:43.445+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:04:43.442+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/master_dag.py", line 39
+    schedule_interval="@daily",
+    ^
+SyntaxError: keyword argument repeated
+[2023-08-21T01:04:43.447+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:04:43.494+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/master_dag.py took 0.082 seconds
+[2023-08-20T21:04:47.015-0400] {processor.py:157} INFO - Started process (PID=83126) to work on /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:04:47.017-0400] {processor.py:826} INFO - Processing file /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py for tasks to queue
+[2023-08-20T21:04:47.018-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:04:47.018-0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:04:47.025-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:04:47.023-0400] {dagbag.py:350} ERROR - Failed to import: /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/mnguyen0226/anaconda3/envs/learning_scraper/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py", line 39
+    schedule_interval="@daily",
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: keyword argument repeated: schedule_interval
+[2023-08-20T21:04:47.026-0400] {processor.py:838} WARNING - No viable dags retrieved from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:04:47.061-0400] {processor.py:179} INFO - Processing /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py took 0.052 seconds
+[2023-08-21T01:04:52.564+0000] {processor.py:157} INFO - Started process (PID=194) to work on /opt/airflow/dags/master_dag.py
+[2023-08-21T01:04:52.565+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/master_dag.py for tasks to queue
+[2023-08-21T01:04:52.566+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:04:52.566+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:04:52.577+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:04:52.574+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/master_dag.py", line 40
+    schedule_interval="@daily",
+    ^
+SyntaxError: keyword argument repeated
+[2023-08-21T01:04:52.580+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:04:52.614+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/master_dag.py took 0.057 seconds
+[2023-08-20T21:05:06.427-0400] {processor.py:157} INFO - Started process (PID=83256) to work on /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:05:06.428-0400] {processor.py:826} INFO - Processing file /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py for tasks to queue
+[2023-08-20T21:05:06.429-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:05:06.428-0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:05:06.435-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:05:06.433-0400] {dagbag.py:350} ERROR - Failed to import: /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/mnguyen0226/anaconda3/envs/learning_scraper/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py", line 40
+    schedule_interval="@daily",
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: keyword argument repeated: schedule_interval
+[2023-08-20T21:05:06.436-0400] {processor.py:838} WARNING - No viable dags retrieved from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:05:06.460-0400] {processor.py:179} INFO - Processing /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py took 0.037 seconds
+[2023-08-21T01:05:20.820+0000] {processor.py:157} INFO - Started process (PID=205) to work on /opt/airflow/dags/master_dag.py
+[2023-08-21T01:05:20.821+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/master_dag.py for tasks to queue
+[2023-08-21T01:05:20.823+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:05:20.823+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:05:20.829+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:05:20.828+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/master_dag.py", line 40
+    schedule_interval="@daily"
+    ^
+SyntaxError: keyword argument repeated
+[2023-08-21T01:05:20.830+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:05:20.866+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/master_dag.py took 0.052 seconds
+[2023-08-20T21:05:24.011-0400] {processor.py:157} INFO - Started process (PID=83349) to work on /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:05:24.012-0400] {processor.py:826} INFO - Processing file /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py for tasks to queue
+[2023-08-20T21:05:24.013-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:05:24.013-0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:05:24.020-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:05:24.018-0400] {dagbag.py:350} ERROR - Failed to import: /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+Traceback (most recent call last):
+  File "/home/mnguyen0226/anaconda3/envs/learning_scraper/lib/python3.11/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 936, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1074, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1004, in source_to_code
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py", line 40
+    schedule_interval="@daily"
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: keyword argument repeated: schedule_interval
+[2023-08-20T21:05:24.021-0400] {processor.py:838} WARNING - No viable dags retrieved from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:05:24.057-0400] {processor.py:179} INFO - Processing /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py took 0.051 seconds
+[2023-08-20T21:05:45.124-0400] {processor.py:157} INFO - Started process (PID=83423) to work on /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:05:45.125-0400] {processor.py:826} INFO - Processing file /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py for tasks to queue
+[2023-08-20T21:05:45.126-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:05:45.126-0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:05:45.182-0400] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:05:45.462-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:05:45.462-0400] {manager.py:504} INFO - Created Permission View: can read on DAG:master_dag_v0
+[2023-08-20T21:05:45.489-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:05:45.488-0400] {manager.py:504} INFO - Created Permission View: can edit on DAG:master_dag_v0
+[2023-08-20T21:05:45.504-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:05:45.504-0400] {manager.py:504} INFO - Created Permission View: can delete on DAG:master_dag_v0
+[2023-08-20T21:05:45.519-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:05:45.519-0400] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-20T21:05:45.533-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:05:45.533-0400] {dag.py:2763} INFO - Creating ORM DAG for master_dag_v0
+[2023-08-20T21:05:45.549-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:05:45.548-0400] {dag.py:3504} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-18T00:00:00+00:00, run_after=2023-08-19T00:00:00+00:00
+[2023-08-20T21:05:45.593-0400] {processor.py:179} INFO - Processing /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py took 0.472 seconds
+[2023-08-21T01:05:46.056+0000] {processor.py:157} INFO - Started process (PID=217) to work on /opt/airflow/dags/master_dag.py
+[2023-08-21T01:05:46.058+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/master_dag.py for tasks to queue
+[2023-08-21T01:05:46.062+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:05:46.061+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:05:46.278+0000] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:05:46.556+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:05:46.556+0000] {manager.py:504} INFO - Created Permission View: can delete on DAG:master_dag_v0
+[2023-08-21T01:05:46.576+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:05:46.575+0000] {manager.py:504} INFO - Created Permission View: can edit on DAG:master_dag_v0
+[2023-08-21T01:05:46.588+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:05:46.587+0000] {manager.py:504} INFO - Created Permission View: can read on DAG:master_dag_v0
+[2023-08-21T01:05:46.609+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:05:46.609+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-21T01:05:46.628+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:05:46.628+0000] {dag.py:2763} INFO - Creating ORM DAG for master_dag_v0
+[2023-08-21T01:05:46.648+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:05:46.647+0000] {dag.py:3508} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-18T00:00:00+00:00, run_after=2023-08-19T00:00:00+00:00
+[2023-08-21T01:05:46.688+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/master_dag.py took 0.644 seconds
+[2023-08-21T01:06:16.925+0000] {processor.py:157} INFO - Started process (PID=234) to work on /opt/airflow/dags/master_dag.py
+[2023-08-21T01:06:16.926+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/master_dag.py for tasks to queue
+[2023-08-21T01:06:16.927+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:06:16.927+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:06:16.967+0000] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:06:17.013+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:06:17.013+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-21T01:06:17.047+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:06:17.047+0000] {dag.py:3508} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-21T00:00:00+00:00, run_after=2023-08-22T00:00:00+00:00
+[2023-08-21T01:06:17.084+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/master_dag.py took 0.165 seconds
+[2023-08-20T21:06:28.058-0400] {processor.py:157} INFO - Started process (PID=83614) to work on /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:06:28.058-0400] {processor.py:826} INFO - Processing file /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py for tasks to queue
+[2023-08-20T21:06:28.060-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:06:28.059-0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:06:28.186-0400] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:06:28.194-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:06:28.194-0400] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-20T21:06:28.211-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:06:28.210-0400] {dag.py:3504} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-18T00:00:00+00:00, run_after=2023-08-19T00:00:00+00:00
+[2023-08-20T21:06:28.241-0400] {processor.py:179} INFO - Processing /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py took 0.185 seconds
+[2023-08-21T01:06:47.157+0000] {processor.py:157} INFO - Started process (PID=246) to work on /opt/airflow/dags/master_dag.py
+[2023-08-21T01:06:47.158+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/master_dag.py for tasks to queue
+[2023-08-21T01:06:47.160+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:06:47.159+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:06:47.207+0000] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:06:47.246+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:06:47.246+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-21T01:06:47.290+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:06:47.290+0000] {dag.py:3508} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-21T00:00:00+00:00, run_after=2023-08-22T00:00:00+00:00
+[2023-08-21T01:06:47.344+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/master_dag.py took 0.193 seconds
+[2023-08-20T21:07:10.063-0400] {processor.py:157} INFO - Started process (PID=83841) to work on /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:07:10.064-0400] {processor.py:826} INFO - Processing file /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py for tasks to queue
+[2023-08-20T21:07:10.065-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:07:10.065-0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:07:10.218-0400] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:07:10.228-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:07:10.228-0400] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-20T21:07:10.247-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:07:10.247-0400] {dag.py:3504} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-18T00:00:00+00:00, run_after=2023-08-19T00:00:00+00:00
+[2023-08-20T21:07:10.272-0400] {processor.py:179} INFO - Processing /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py took 0.214 seconds
+[2023-08-21T01:07:17.560+0000] {processor.py:157} INFO - Started process (PID=257) to work on /opt/airflow/dags/master_dag.py
+[2023-08-21T01:07:17.564+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/master_dag.py for tasks to queue
+[2023-08-21T01:07:17.569+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:07:17.568+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:07:17.629+0000] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:07:17.670+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:07:17.669+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-21T01:07:17.710+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:07:17.710+0000] {dag.py:3508} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-21T00:00:00+00:00, run_after=2023-08-22T00:00:00+00:00
+[2023-08-21T01:07:17.764+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/master_dag.py took 0.216 seconds
+[2023-08-21T01:07:47.827+0000] {processor.py:157} INFO - Started process (PID=270) to work on /opt/airflow/dags/master_dag.py
+[2023-08-21T01:07:47.828+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/master_dag.py for tasks to queue
+[2023-08-21T01:07:47.829+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:07:47.829+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:07:47.870+0000] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:07:47.917+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:07:47.916+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-21T01:07:47.958+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:07:47.958+0000] {dag.py:3508} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-21T00:00:00+00:00, run_after=2023-08-22T00:00:00+00:00
+[2023-08-21T01:07:48.000+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/master_dag.py took 0.179 seconds
+[2023-08-20T21:07:52.489-0400] {processor.py:157} INFO - Started process (PID=83993) to work on /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:07:52.490-0400] {processor.py:826} INFO - Processing file /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py for tasks to queue
+[2023-08-20T21:07:52.492-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:07:52.491-0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:07:52.550-0400] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:07:52.562-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:07:52.562-0400] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-20T21:07:52.578-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:07:52.578-0400] {dag.py:3504} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-18T00:00:00+00:00, run_after=2023-08-19T00:00:00+00:00
+[2023-08-20T21:07:52.603-0400] {processor.py:179} INFO - Processing /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py took 0.118 seconds
+[2023-08-21T01:08:18.226+0000] {processor.py:157} INFO - Started process (PID=283) to work on /opt/airflow/dags/master_dag.py
+[2023-08-21T01:08:18.227+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/master_dag.py for tasks to queue
+[2023-08-21T01:08:18.229+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:08:18.229+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:08:18.269+0000] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:08:18.302+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:08:18.302+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-21T01:08:18.334+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:08:18.334+0000] {dag.py:3508} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-21T00:00:00+00:00, run_after=2023-08-22T00:00:00+00:00
+[2023-08-21T01:08:18.371+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/master_dag.py took 0.153 seconds
+[2023-08-20T21:08:29.032-0400] {processor.py:157} INFO - Started process (PID=84158) to work on /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:08:29.042-0400] {processor.py:826} INFO - Processing file /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py for tasks to queue
+[2023-08-20T21:08:29.044-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:08:29.043-0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:08:29.109-0400] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:08:29.124-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:08:29.124-0400] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-20T21:08:29.142-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:08:29.142-0400] {dag.py:3504} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-18T00:00:00+00:00, run_after=2023-08-19T00:00:00+00:00
+[2023-08-20T21:08:29.172-0400] {processor.py:179} INFO - Processing /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py took 0.145 seconds
+[2023-08-21T01:08:48.502+0000] {processor.py:157} INFO - Started process (PID=296) to work on /opt/airflow/dags/master_dag.py
+[2023-08-21T01:08:48.505+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/master_dag.py for tasks to queue
+[2023-08-21T01:08:48.508+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:08:48.507+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:08:48.578+0000] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:08:48.630+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:08:48.630+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-21T01:08:48.691+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:08:48.691+0000] {dag.py:3508} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-21T00:00:00+00:00, run_after=2023-08-22T00:00:00+00:00
+[2023-08-21T01:08:48.721+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/master_dag.py took 0.231 seconds
+[2023-08-20T21:09:05.675-0400] {processor.py:157} INFO - Started process (PID=84318) to work on /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:09:05.676-0400] {processor.py:826} INFO - Processing file /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py for tasks to queue
+[2023-08-20T21:09:05.676-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:09:05.676-0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:09:05.708-0400] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:09:05.722-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:09:05.722-0400] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-20T21:09:05.736-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:09:05.736-0400] {dag.py:3504} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-18T00:00:00+00:00, run_after=2023-08-19T00:00:00+00:00
+[2023-08-20T21:09:05.767-0400] {processor.py:179} INFO - Processing /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py took 0.094 seconds
+[2023-08-21T01:09:18.866+0000] {processor.py:157} INFO - Started process (PID=308) to work on /opt/airflow/dags/master_dag.py
+[2023-08-21T01:09:18.868+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/master_dag.py for tasks to queue
+[2023-08-21T01:09:18.870+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:09:18.870+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:09:18.950+0000] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:09:18.992+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:09:18.991+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-21T01:09:19.042+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:09:19.042+0000] {dag.py:3508} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-21T00:00:00+00:00, run_after=2023-08-22T00:00:00+00:00
+[2023-08-21T01:09:19.092+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/master_dag.py took 0.233 seconds
+[2023-08-20T21:09:39.562-0400] {processor.py:157} INFO - Started process (PID=84509) to work on /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:09:39.564-0400] {processor.py:826} INFO - Processing file /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py for tasks to queue
+[2023-08-20T21:09:39.565-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:09:39.564-0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:09:39.635-0400] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:09:39.655-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:09:39.655-0400] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-20T21:09:39.674-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:09:39.674-0400] {dag.py:3504} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-18T00:00:00+00:00, run_after=2023-08-19T00:00:00+00:00
+[2023-08-20T21:09:39.711-0400] {processor.py:179} INFO - Processing /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py took 0.154 seconds
+[2023-08-21T01:09:49.194+0000] {processor.py:157} INFO - Started process (PID=320) to work on /opt/airflow/dags/master_dag.py
+[2023-08-21T01:09:49.195+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/master_dag.py for tasks to queue
+[2023-08-21T01:09:49.197+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:09:49.196+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:09:49.269+0000] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:09:49.334+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:09:49.334+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-21T01:09:49.402+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:09:49.402+0000] {dag.py:3508} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-21T00:00:00+00:00, run_after=2023-08-22T00:00:00+00:00
+[2023-08-21T01:09:49.442+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/master_dag.py took 0.255 seconds
+[2023-08-20T21:10:18.210-0400] {processor.py:157} INFO - Started process (PID=84711) to work on /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:10:18.210-0400] {processor.py:826} INFO - Processing file /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py for tasks to queue
+[2023-08-20T21:10:18.211-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:10:18.211-0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:10:18.274-0400] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:10:18.295-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:10:18.295-0400] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-20T21:10:18.317-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:10:18.317-0400] {dag.py:3504} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-18T00:00:00+00:00, run_after=2023-08-19T00:00:00+00:00
+[2023-08-20T21:10:18.346-0400] {processor.py:179} INFO - Processing /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py took 0.139 seconds
+[2023-08-21T01:10:19.588+0000] {processor.py:157} INFO - Started process (PID=332) to work on /opt/airflow/dags/master_dag.py
+[2023-08-21T01:10:19.590+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/master_dag.py for tasks to queue
+[2023-08-21T01:10:19.592+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:10:19.591+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:10:19.639+0000] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:10:19.688+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:10:19.688+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-21T01:10:19.754+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:10:19.753+0000] {dag.py:3508} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-21T00:00:00+00:00, run_after=2023-08-22T00:00:00+00:00
+[2023-08-21T01:10:19.806+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/master_dag.py took 0.223 seconds
+[2023-08-21T01:10:49.962+0000] {processor.py:157} INFO - Started process (PID=344) to work on /opt/airflow/dags/master_dag.py
+[2023-08-21T01:10:49.965+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/master_dag.py for tasks to queue
+[2023-08-21T01:10:49.967+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:10:49.967+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:10:50.021+0000] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:10:50.058+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:10:50.058+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-21T01:10:50.112+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:10:50.112+0000] {dag.py:3508} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-21T00:00:00+00:00, run_after=2023-08-22T00:00:00+00:00
+[2023-08-21T01:10:50.167+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/master_dag.py took 0.216 seconds
+[2023-08-20T21:10:57.972-0400] {processor.py:157} INFO - Started process (PID=84883) to work on /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:10:57.974-0400] {processor.py:826} INFO - Processing file /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py for tasks to queue
+[2023-08-20T21:10:57.975-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:10:57.974-0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:10:58.045-0400] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:10:58.057-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:10:58.057-0400] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-20T21:10:58.074-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:10:58.074-0400] {dag.py:3504} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-18T00:00:00+00:00, run_after=2023-08-19T00:00:00+00:00
+[2023-08-20T21:10:58.113-0400] {processor.py:179} INFO - Processing /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py took 0.146 seconds
+[2023-08-21T01:11:20.304+0000] {processor.py:157} INFO - Started process (PID=356) to work on /opt/airflow/dags/master_dag.py
+[2023-08-21T01:11:20.307+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/master_dag.py for tasks to queue
+[2023-08-21T01:11:20.310+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:11:20.309+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:11:20.373+0000] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:11:20.414+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:11:20.413+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-21T01:11:20.475+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:11:20.474+0000] {dag.py:3508} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-21T00:00:00+00:00, run_after=2023-08-22T00:00:00+00:00
+[2023-08-21T01:11:20.526+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/master_dag.py took 0.234 seconds
+[2023-08-20T21:11:32.644-0400] {processor.py:157} INFO - Started process (PID=85039) to work on /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:11:32.645-0400] {processor.py:826} INFO - Processing file /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py for tasks to queue
+[2023-08-20T21:11:32.646-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:11:32.646-0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:11:32.692-0400] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:11:32.704-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:11:32.704-0400] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-20T21:11:32.719-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:11:32.719-0400] {dag.py:3504} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-18T00:00:00+00:00, run_after=2023-08-19T00:00:00+00:00
+[2023-08-20T21:11:32.742-0400] {processor.py:179} INFO - Processing /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py took 0.101 seconds
+[2023-08-21T01:11:50.644+0000] {processor.py:157} INFO - Started process (PID=368) to work on /opt/airflow/dags/master_dag.py
+[2023-08-21T01:11:50.645+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/master_dag.py for tasks to queue
+[2023-08-21T01:11:50.647+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:11:50.646+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:11:50.690+0000] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:11:50.761+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:11:50.760+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-21T01:11:50.827+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:11:50.827+0000] {dag.py:3508} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-21T00:00:00+00:00, run_after=2023-08-22T00:00:00+00:00
+[2023-08-21T01:11:50.867+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/master_dag.py took 0.228 seconds
+[2023-08-20T21:12:07.264-0400] {processor.py:157} INFO - Started process (PID=85139) to work on /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:12:07.265-0400] {processor.py:826} INFO - Processing file /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py for tasks to queue
+[2023-08-20T21:12:07.267-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:12:07.266-0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:12:07.314-0400] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:12:07.325-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:12:07.325-0400] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-20T21:12:07.340-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:12:07.340-0400] {dag.py:3504} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-18T00:00:00+00:00, run_after=2023-08-19T00:00:00+00:00
+[2023-08-20T21:12:07.362-0400] {processor.py:179} INFO - Processing /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py took 0.102 seconds
+[2023-08-21T01:12:21.005+0000] {processor.py:157} INFO - Started process (PID=380) to work on /opt/airflow/dags/master_dag.py
+[2023-08-21T01:12:21.006+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/master_dag.py for tasks to queue
+[2023-08-21T01:12:21.008+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:12:21.008+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:12:21.051+0000] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:12:21.091+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:12:21.091+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-21T01:12:21.121+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:12:21.121+0000] {dag.py:3508} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-21T00:00:00+00:00, run_after=2023-08-22T00:00:00+00:00
+[2023-08-21T01:12:21.148+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/master_dag.py took 0.149 seconds
+[2023-08-20T21:12:43.645-0400] {processor.py:157} INFO - Started process (PID=85639) to work on /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:12:43.646-0400] {processor.py:826} INFO - Processing file /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py for tasks to queue
+[2023-08-20T21:12:43.647-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:12:43.646-0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:12:43.699-0400] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:12:43.718-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:12:43.718-0400] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-20T21:12:43.744-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:12:43.744-0400] {dag.py:3504} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-18T00:00:00+00:00, run_after=2023-08-19T00:00:00+00:00
+[2023-08-20T21:12:43.798-0400] {processor.py:179} INFO - Processing /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py took 0.156 seconds
+[2023-08-21T01:12:51.354+0000] {processor.py:157} INFO - Started process (PID=392) to work on /opt/airflow/dags/master_dag.py
+[2023-08-21T01:12:51.356+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/master_dag.py for tasks to queue
+[2023-08-21T01:12:51.358+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:12:51.358+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:12:51.458+0000] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:12:51.504+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:12:51.504+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-21T01:12:51.541+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:12:51.540+0000] {dag.py:3508} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-21T00:00:00+00:00, run_after=2023-08-22T00:00:00+00:00
+[2023-08-21T01:12:51.568+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/master_dag.py took 0.225 seconds
+[2023-08-21T01:13:21.671+0000] {processor.py:157} INFO - Started process (PID=404) to work on /opt/airflow/dags/master_dag.py
+[2023-08-21T01:13:21.673+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/master_dag.py for tasks to queue
+[2023-08-21T01:13:21.675+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:13:21.674+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:13:21.715+0000] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:13:21.749+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:13:21.749+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-21T01:13:21.782+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:13:21.782+0000] {dag.py:3508} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-21T00:00:00+00:00, run_after=2023-08-22T00:00:00+00:00
+[2023-08-20T21:13:21.811-0400] {processor.py:157} INFO - Started process (PID=85875) to work on /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:13:21.811-0400] {processor.py:826} INFO - Processing file /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py for tasks to queue
+[2023-08-20T21:13:21.812-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:13:21.812-0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-21T01:13:21.818+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/master_dag.py took 0.153 seconds
+[2023-08-20T21:13:21.842-0400] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:13:21.853-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:13:21.853-0400] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-20T21:13:21.867-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:13:21.867-0400] {dag.py:3504} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-18T00:00:00+00:00, run_after=2023-08-19T00:00:00+00:00
+[2023-08-20T21:13:21.892-0400] {processor.py:179} INFO - Processing /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py took 0.084 seconds
+[2023-08-21T01:13:52.047+0000] {processor.py:157} INFO - Started process (PID=416) to work on /opt/airflow/dags/master_dag.py
+[2023-08-21T01:13:52.049+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/master_dag.py for tasks to queue
+[2023-08-21T01:13:52.052+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:13:52.051+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:13:52.102+0000] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:13:52.142+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:13:52.142+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-21T01:13:52.181+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:13:52.180+0000] {dag.py:3508} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-21T00:00:00+00:00, run_after=2023-08-22T00:00:00+00:00
+[2023-08-21T01:13:52.240+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/master_dag.py took 0.199 seconds
+[2023-08-20T21:14:00.809-0400] {processor.py:157} INFO - Started process (PID=86039) to work on /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:14:00.811-0400] {processor.py:826} INFO - Processing file /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py for tasks to queue
+[2023-08-20T21:14:00.812-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:14:00.811-0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:14:00.849-0400] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:14:00.864-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:14:00.863-0400] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-20T21:14:00.881-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:14:00.881-0400] {dag.py:3504} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-18T00:00:00+00:00, run_after=2023-08-19T00:00:00+00:00
+[2023-08-20T21:14:00.910-0400] {processor.py:179} INFO - Processing /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py took 0.103 seconds
+[2023-08-21T01:14:22.502+0000] {processor.py:157} INFO - Started process (PID=428) to work on /opt/airflow/dags/master_dag.py
+[2023-08-21T01:14:22.504+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/master_dag.py for tasks to queue
+[2023-08-21T01:14:22.506+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:14:22.505+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:14:22.564+0000] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:14:22.605+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:14:22.605+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-21T01:14:22.640+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:14:22.639+0000] {dag.py:3508} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-21T00:00:00+00:00, run_after=2023-08-22T00:00:00+00:00
+[2023-08-21T01:14:22.664+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/master_dag.py took 0.173 seconds
+[2023-08-20T21:14:39.343-0400] {processor.py:157} INFO - Started process (PID=86226) to work on /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:14:39.344-0400] {processor.py:826} INFO - Processing file /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py for tasks to queue
+[2023-08-20T21:14:39.344-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:14:39.344-0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:14:39.383-0400] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:14:39.396-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:14:39.396-0400] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-20T21:14:39.415-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:14:39.414-0400] {dag.py:3504} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-18T00:00:00+00:00, run_after=2023-08-19T00:00:00+00:00
+[2023-08-20T21:14:39.448-0400] {processor.py:179} INFO - Processing /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py took 0.107 seconds
+[2023-08-21T01:14:52.762+0000] {processor.py:157} INFO - Started process (PID=446) to work on /opt/airflow/dags/master_dag.py
+[2023-08-21T01:14:52.764+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/master_dag.py for tasks to queue
+[2023-08-21T01:14:52.766+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:14:52.766+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:14:52.814+0000] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:14:52.852+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:14:52.852+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-21T01:14:52.884+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:14:52.884+0000] {dag.py:3508} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-21T00:00:00+00:00, run_after=2023-08-22T00:00:00+00:00
+[2023-08-21T01:14:52.908+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/master_dag.py took 0.156 seconds
+[2023-08-20T21:15:16.765-0400] {processor.py:157} INFO - Started process (PID=86363) to work on /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:15:16.774-0400] {processor.py:826} INFO - Processing file /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py for tasks to queue
+[2023-08-20T21:15:16.776-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:15:16.775-0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:15:16.832-0400] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:15:16.844-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:15:16.844-0400] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-20T21:15:16.859-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:15:16.858-0400] {dag.py:3504} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-18T00:00:00+00:00, run_after=2023-08-19T00:00:00+00:00
+[2023-08-20T21:15:16.882-0400] {processor.py:179} INFO - Processing /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py took 0.122 seconds
+[2023-08-21T01:15:23.123+0000] {processor.py:157} INFO - Started process (PID=459) to work on /opt/airflow/dags/master_dag.py
+[2023-08-21T01:15:23.124+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/master_dag.py for tasks to queue
+[2023-08-21T01:15:23.125+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:15:23.125+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:15:23.163+0000] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:15:23.200+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:15:23.200+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-21T01:15:23.230+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:15:23.230+0000] {dag.py:3508} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-21T00:00:00+00:00, run_after=2023-08-22T00:00:00+00:00
+[2023-08-21T01:15:23.268+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/master_dag.py took 0.151 seconds
+[2023-08-20T21:15:49.592-0400] {processor.py:157} INFO - Started process (PID=86434) to work on /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:15:49.593-0400] {processor.py:826} INFO - Processing file /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py for tasks to queue
+[2023-08-20T21:15:49.594-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:15:49.594-0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:15:49.638-0400] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:15:49.648-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:15:49.648-0400] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-20T21:15:49.664-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:15:49.664-0400] {dag.py:3504} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-18T00:00:00+00:00, run_after=2023-08-19T00:00:00+00:00
+[2023-08-20T21:15:49.685-0400] {processor.py:179} INFO - Processing /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py took 0.097 seconds
+[2023-08-21T01:15:53.364+0000] {processor.py:157} INFO - Started process (PID=471) to work on /opt/airflow/dags/master_dag.py
+[2023-08-21T01:15:53.366+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/master_dag.py for tasks to queue
+[2023-08-21T01:15:53.368+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:15:53.367+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:15:53.435+0000] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:15:53.511+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:15:53.510+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-21T01:15:53.561+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:15:53.561+0000] {dag.py:3508} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-21T00:00:00+00:00, run_after=2023-08-22T00:00:00+00:00
+[2023-08-21T01:15:53.607+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/master_dag.py took 0.253 seconds
+[2023-08-21T01:16:23.730+0000] {processor.py:157} INFO - Started process (PID=483) to work on /opt/airflow/dags/master_dag.py
+[2023-08-21T01:16:23.732+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/master_dag.py for tasks to queue
+[2023-08-21T01:16:23.735+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:16:23.734+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:16:23.797+0000] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:16:23.838+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:16:23.838+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-21T01:16:23.870+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:16:23.870+0000] {dag.py:3508} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-21T00:00:00+00:00, run_after=2023-08-22T00:00:00+00:00
+[2023-08-21T01:16:23.898+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/master_dag.py took 0.182 seconds
+[2023-08-20T21:16:25.294-0400] {processor.py:157} INFO - Started process (PID=86579) to work on /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:16:25.295-0400] {processor.py:826} INFO - Processing file /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py for tasks to queue
+[2023-08-20T21:16:25.296-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:16:25.296-0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:16:25.366-0400] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:16:25.381-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:16:25.381-0400] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-20T21:16:25.400-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:16:25.400-0400] {dag.py:3504} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-18T00:00:00+00:00, run_after=2023-08-19T00:00:00+00:00
+[2023-08-20T21:16:25.443-0400] {processor.py:179} INFO - Processing /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py took 0.155 seconds
+[2023-08-21T01:16:54.087+0000] {processor.py:157} INFO - Started process (PID=496) to work on /opt/airflow/dags/master_dag.py
+[2023-08-21T01:16:54.089+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/master_dag.py for tasks to queue
+[2023-08-21T01:16:54.091+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:16:54.090+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:16:54.147+0000] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:16:54.191+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:16:54.190+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-21T01:16:54.255+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:16:54.255+0000] {dag.py:3508} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-21T00:00:00+00:00, run_after=2023-08-22T00:00:00+00:00
+[2023-08-21T01:16:54.314+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/master_dag.py took 0.237 seconds
+[2023-08-20T21:17:03.117-0400] {processor.py:157} INFO - Started process (PID=86948) to work on /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:17:03.118-0400] {processor.py:826} INFO - Processing file /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py for tasks to queue
+[2023-08-20T21:17:03.120-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:17:03.119-0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:17:03.186-0400] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:17:03.201-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:17:03.201-0400] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-20T21:17:03.221-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:17:03.220-0400] {dag.py:3504} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-18T00:00:00+00:00, run_after=2023-08-19T00:00:00+00:00
+[2023-08-20T21:17:03.256-0400] {processor.py:179} INFO - Processing /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py took 0.144 seconds
+[2023-08-21T01:17:24.643+0000] {processor.py:157} INFO - Started process (PID=508) to work on /opt/airflow/dags/master_dag.py
+[2023-08-21T01:17:24.646+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/master_dag.py for tasks to queue
+[2023-08-21T01:17:24.648+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:17:24.647+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:17:24.693+0000] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:17:24.728+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:17:24.728+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-21T01:17:24.763+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:17:24.763+0000] {dag.py:3508} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-21T00:00:00+00:00, run_after=2023-08-22T00:00:00+00:00
+[2023-08-21T01:17:24.790+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/master_dag.py took 0.155 seconds
+[2023-08-20T21:17:38.835-0400] {processor.py:157} INFO - Started process (PID=87066) to work on /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:17:38.836-0400] {processor.py:826} INFO - Processing file /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py for tasks to queue
+[2023-08-20T21:17:38.837-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:17:38.837-0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:17:38.897-0400] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:17:38.909-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:17:38.909-0400] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-20T21:17:38.927-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:17:38.927-0400] {dag.py:3504} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-18T00:00:00+00:00, run_after=2023-08-19T00:00:00+00:00
+[2023-08-20T21:17:38.954-0400] {processor.py:179} INFO - Processing /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py took 0.123 seconds
+[2023-08-20T21:18:13.929-0400] {processor.py:157} INFO - Started process (PID=87286) to work on /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:18:13.938-0400] {processor.py:826} INFO - Processing file /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py for tasks to queue
+[2023-08-20T21:18:13.939-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:18:13.939-0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:18:14.006-0400] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:18:14.028-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:18:14.028-0400] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-20T21:18:14.048-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:18:14.047-0400] {dag.py:3504} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-18T00:00:00+00:00, run_after=2023-08-19T00:00:00+00:00
+[2023-08-20T21:18:14.076-0400] {processor.py:179} INFO - Processing /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py took 0.152 seconds
+[2023-08-20T21:18:52.388-0400] {processor.py:157} INFO - Started process (PID=87421) to work on /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:18:52.389-0400] {processor.py:826} INFO - Processing file /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py for tasks to queue
+[2023-08-20T21:18:52.391-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:18:52.390-0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:18:52.460-0400] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:18:52.477-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:18:52.477-0400] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-20T21:18:52.498-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:18:52.498-0400] {dag.py:3504} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-18T00:00:00+00:00, run_after=2023-08-19T00:00:00+00:00
+[2023-08-20T21:18:52.541-0400] {processor.py:179} INFO - Processing /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py took 0.159 seconds
+[2023-08-20T21:19:29.973-0400] {processor.py:157} INFO - Started process (PID=87792) to work on /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:19:29.974-0400] {processor.py:826} INFO - Processing file /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py for tasks to queue
+[2023-08-20T21:19:29.975-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:19:29.974-0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:19:30.010-0400] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:19:30.022-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:19:30.022-0400] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-20T21:19:30.038-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:19:30.038-0400] {dag.py:3504} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-18T00:00:00+00:00, run_after=2023-08-19T00:00:00+00:00
+[2023-08-20T21:19:30.063-0400] {processor.py:179} INFO - Processing /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py took 0.092 seconds
+[2023-08-21T01:19:35.138+0000] {processor.py:157} INFO - Started process (PID=163) to work on /opt/airflow/dags/master_dag.py
+[2023-08-21T01:19:35.140+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/master_dag.py for tasks to queue
+[2023-08-21T01:19:35.143+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:19:35.142+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:19:35.194+0000] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:19:35.356+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:19:35.355+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-21T01:19:35.387+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:19:35.387+0000] {dag.py:3508} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-21T00:00:00+00:00, run_after=2023-08-22T00:00:00+00:00
+[2023-08-21T01:19:35.426+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/master_dag.py took 0.292 seconds
+[2023-08-20T21:20:04.434-0400] {processor.py:157} INFO - Started process (PID=88014) to work on /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:20:04.435-0400] {processor.py:826} INFO - Processing file /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py for tasks to queue
+[2023-08-20T21:20:04.436-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:20:04.436-0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:20:04.490-0400] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:20:04.533-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:20:04.533-0400] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-20T21:20:04.551-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:20:04.551-0400] {dag.py:3504} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-18T00:00:00+00:00, run_after=2023-08-19T00:00:00+00:00
+[2023-08-20T21:20:04.574-0400] {processor.py:179} INFO - Processing /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py took 0.143 seconds
+[2023-08-21T01:20:05.634+0000] {processor.py:157} INFO - Started process (PID=177) to work on /opt/airflow/dags/master_dag.py
+[2023-08-21T01:20:05.636+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/master_dag.py for tasks to queue
+[2023-08-21T01:20:05.638+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:20:05.637+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:20:05.720+0000] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:20:05.793+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:20:05.793+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-21T01:20:05.845+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:20:05.845+0000] {dag.py:3508} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-21T00:00:00+00:00, run_after=2023-08-22T00:00:00+00:00
+[2023-08-21T01:20:05.896+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/master_dag.py took 0.270 seconds
+[2023-08-21T01:20:36.204+0000] {processor.py:157} INFO - Started process (PID=195) to work on /opt/airflow/dags/master_dag.py
+[2023-08-21T01:20:36.207+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/master_dag.py for tasks to queue
+[2023-08-21T01:20:36.209+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:20:36.208+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:20:36.261+0000] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:20:36.300+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:20:36.300+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-21T01:20:36.344+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:20:36.344+0000] {dag.py:3508} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-21T00:00:00+00:00, run_after=2023-08-22T00:00:00+00:00
+[2023-08-21T01:20:36.388+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/master_dag.py took 0.194 seconds
+[2023-08-20T21:20:39.609-0400] {processor.py:157} INFO - Started process (PID=88247) to work on /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:20:39.611-0400] {processor.py:826} INFO - Processing file /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py for tasks to queue
+[2023-08-20T21:20:39.612-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:20:39.611-0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:20:39.666-0400] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:20:39.677-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:20:39.677-0400] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-20T21:20:39.695-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:20:39.695-0400] {dag.py:3504} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-18T00:00:00+00:00, run_after=2023-08-19T00:00:00+00:00
+[2023-08-20T21:20:39.718-0400] {processor.py:179} INFO - Processing /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py took 0.113 seconds
+[2023-08-21T01:21:06.618+0000] {processor.py:157} INFO - Started process (PID=206) to work on /opt/airflow/dags/master_dag.py
+[2023-08-21T01:21:06.620+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/master_dag.py for tasks to queue
+[2023-08-21T01:21:06.622+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:21:06.621+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:21:06.662+0000] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /opt/airflow/dags/master_dag.py
+[2023-08-21T01:21:06.697+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:21:06.697+0000] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-21T01:21:06.730+0000] {logging_mixin.py:150} INFO - [2023-08-21T01:21:06.730+0000] {dag.py:3508} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-21T00:00:00+00:00, run_after=2023-08-22T00:00:00+00:00
+[2023-08-21T01:21:06.765+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/master_dag.py took 0.151 seconds
+[2023-08-20T21:21:14.733-0400] {processor.py:157} INFO - Started process (PID=88316) to work on /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:21:14.742-0400] {processor.py:826} INFO - Processing file /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py for tasks to queue
+[2023-08-20T21:21:14.744-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:21:14.743-0400] {dagbag.py:541} INFO - Filling up the DagBag from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:21:14.802-0400] {processor.py:836} INFO - DAG(s) dict_keys(['master_dag_v0']) retrieved from /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py
+[2023-08-20T21:21:14.813-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:21:14.813-0400] {dag.py:2742} INFO - Sync 1 DAGs
+[2023-08-20T21:21:14.828-0400] {logging_mixin.py:150} INFO - [2023-08-20T21:21:14.828-0400] {dag.py:3504} INFO - Setting next_dagrun for master_dag_v0 to 2023-08-18T00:00:00+00:00, run_after=2023-08-19T00:00:00+00:00
+[2023-08-20T21:21:14.849-0400] {processor.py:179} INFO - Processing /home/mnguyen0226/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master/airflow_master/dags/master_dag.py took 0.121 seconds

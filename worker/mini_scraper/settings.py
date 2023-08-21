@@ -105,10 +105,14 @@ REDIS_URL = "redis://default:T4p3kJQRmQDNRqxt1tG97qQWGKRFG6fQ@redis-12469.c81.us
 # FEEDS = {"data_global.csv": {"format": "csv"}}
 
 # for docker
-FEEDS = {"/app/output/data_global.csv": {"format": "csv"}}
+import datetime
+
+timestamp = datetime.datetime.now().strftime('%Y%m%d_%H%M%S')
+
+FEEDS = {f"/app/output/data_global_{timestamp}.csv": {"format": "csv"}}
 
 DOWNLOAD_DELAY = 2
 
 # log of worker run time
 LOG_LEVEL = "INFO"
-LOG_FILE = "/app/output/scrapy.log"  # This will save logs to the 'output' directory in your project.
+LOG_FILE = f"/app/output/scrapy_{timestamp}.log"  # This will save logs to the 'output' directory in your project.

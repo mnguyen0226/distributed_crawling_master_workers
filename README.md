@@ -195,3 +195,165 @@ For 3 workers:
 
 # Let's separate the docker compose into 2 sections
 - You have to run 2 threads: to build and to run. Master first then Worker
+- "Hello, so I got the code repository for distributed web scraping that has the master push the code web urls into the Redis queue while the worker can take the URL one by one to scrape and get the info, then save to csv file. I was able to get it to work by running docker-compose. Here is the tree of the project."
+
+- Starting from branch `3`
+## Create airflow for master: [un-pw] = [airflow-airflow]
+### Initialize folder
+```
+(learning_scraper) mnguyen0226@pop-os:~/Documents/school/graduate/homebase/learning/distributed_crawling_master_workers/master$ mkdir airflow
+
+export AIRFLOW_HOME=.
+airflow db init
+airflow users create --username admin --firstname firstname --lastname lastname --role Admin --email admin@domain.com
+airflow webserver -p 8080
+
+# after login
+export AIRFLOW_HOME=.
+airflow scheduler
+```
+
+### Run Airflow in Docker
+- [Source](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html)
+- Run Docker Desktop and Check
+```sh
+(learning_airflow) mnguyen0226@pop-os:~/Documents/school/graduate/homebase/learning/web_crawlers/airflow_projects$ docker --version
+Docker version 24.0.5, build ced0996
+(learning_airflow) mnguyen0226@pop-os:~/Documents/school/graduate/homebase/learning/web_crawlers/airflow_projects$ docker-compose --version
+docker-compose version 1.25.5, build unknown
+```
+
+Download docker-compose.yaml
+```sh
+curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.6.3/docker-compose.yaml'
+```
+
+Change:
+```sh
+  # from
+  AIRFLOW__CORE__EXECUTOR: CeleryExecutor
+
+  # to
+  AIRFLOW__CORE__EXECUTOR: LocalExecutor
+```
+
+Delete:
+```sh
+  AIRFLOW__CELERY__RESULT_BACKEND: db+postgresql://airflow:airflow@postgres/airflow
+  AIRFLOW__CELERY__BROKER_URL: redis://:@redis:6379/0
+
+
+  redis:
+    condition: service_healthy
+
+  redis:
+    image: redis:latest
+    expose:
+      - 6379
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 30s
+      retries: 50
+      start_period: 30s
+    restart: always
+
+  airflow-worker:
+    <<: *airflow-common
+    command: celery worker
+    healthcheck:
+      test:
+        - "CMD-SHELL"
+        - 'celery --app airflow.executors.celery_executor.app inspect ping -d "celery@$${HOSTNAME}"'
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+    environment:
+      <<: *airflow-common-env
+      # Required to handle warm shutdown of the celery workers properly
+      # See https://airflow.apache.org/docs/docker-stack/entrypoint.html#signal-propagation
+      DUMB_INIT_SETSID: "0"
+    restart: always
+    depends_on:
+      <<: *airflow-common-depends-on
+      airflow-init:
+        condition: service_completed_successfully
+
+  flower:
+    <<: *airflow-common
+    command: celery flower
+    profiles:
+      - flower
+    ports:
+      - "5555:5555"
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:5555/"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
+    restart: always
+    depends_on:
+      <<: *airflow-common-depends-on
+      airflow-init:
+        condition: service_completed_successfully
+```
+
+Initialize environment
+```sh
+(learning_airflow) mnguyen0226@pop-os:~/Documents/school/graduate/homebase/learning/web_crawlers/airflow_projects/2_airflow_docker$ mkdir -p ./dags ./logs ./plugins ./config
+
+# for linux
+(learning_airflow) mnguyen0226@pop-os:~/Documents/school/graduate/homebase/learning/web_crawlers/airflow_projects/2_airflow_docker$ echo -e "AIRFLOW_UID=$(id -u)" > .env
+```
+
+Initialize database 
+- This is where it will download all the docker images
+```sh
+(learning_airflow) mnguyen0226@pop-os:~/Documents/school/graduate/homebase/learning/web_crawlers/airflow_projects/2_airflow_docker$ docker compose up airflow-init
+
+# output success > 2_airflow_docker-airflow-init-1 exited with code 0
+```
+
+Run Airflow in the background
+```sh
+(learning_airflow) mnguyen0226@pop-os:~/Documents/school/graduate/homebase/learning/web_crawlers/airflow_projects/2_airflow_docker$ docker compose up -d
+```
+
+Check running container
+```sh
+(learning_airflow) mnguyen0226@pop-os:~/Documents/school/graduate/homebase/learning/web_crawlers/airflow_projects/2_airflow_docker$ docker ps
+
+CONTAINER ID   IMAGE                  COMMAND                  CREATED          STATUS                             PORTS                    NAMES
+6658dadfd3e8   apache/airflow:2.6.3   "/usr/bin/dumb-init …"   44 seconds ago   Up 24 seconds (health: starting)   8080/tcp                 2_airflow_docker-airflow-triggerer-1
+bd3f1dbb75a2   apache/airflow:2.6.3   "/usr/bin/dumb-init …"   44 seconds ago   Up 25 seconds (health: starting)   0.0.0.0:8080->8080/tcp   2_airflow_docker-airflow-webserver-1
+19d78357b6a8   apache/airflow:2.6.3   "/usr/bin/dumb-init …"   44 seconds ago   Up 24 seconds (health: starting)   8080/tcp                 2_airflow_docker-airflow-scheduler-1
+ac17a73bed3f   postgres:13            "docker-entrypoint.s…"   2 minutes ago    Up 2 minutes (healthy)             5432/tcp                 2_airflow_docker-postgres-1
+```
+- Here, we can see there airflow webserver and scheduler and postgres database
+
+Check on Docker Desktop
+
+Quickcheck
+```sh
+http://0.0.0.0:8080/
+
+# UN: airflow
+# PW: airflow
+```
+
+To shut down the container and clear the volume defined in the `docker-compose.yaml`, we will do `docker compose down -v`
+
+### Final
+Make sure you follow all steps, to connect to Redis [check image](), you just need to set up connection. To have it run property
+```
+# 2 terminals
+docker compose up # 1
+airflow scheduler # 2
+
+# to shut down
+docker compose down -v
+```
+
+This means that we actually don't need dockerfile and docker compose in the `/master`
