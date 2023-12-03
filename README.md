@@ -1,4 +1,4 @@
-# distributed_crawling_master_workers
+# Distributed Crawling Master-Workers
 
 # S1: Master-Worker Communication
 ## Scrapy-Redis vs Redis
